@@ -6,12 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
-            <script type="text/javascript">location.href = 'index.html';</script>
+            <!--script type="text/javascript">location.href = 'index.html';</script-->
 
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
+    FWD Mockup
         <?php
         // put your code here
         ?>
