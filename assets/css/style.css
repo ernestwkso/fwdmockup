@@ -1304,6 +1304,7 @@ PANELS CONFIGURATIONS
     background: url(../img/enquiry.jpg) no-repeat center top;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .enquiry i {
@@ -1330,6 +1331,7 @@ PANELS CONFIGURATIONS
     background: url(../img/clinic.jpg) no-repeat center top;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .clinic i {
@@ -1356,6 +1358,7 @@ PANELS CONFIGURATIONS
     background: url(../img/group.jpg) no-repeat center top;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .group-med i {
@@ -1382,6 +1385,7 @@ PANELS CONFIGURATIONS
     background: url(../img/self-service.jpg) no-repeat center top;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .selfservice i {
@@ -1408,6 +1412,7 @@ PANELS CONFIGURATIONS
     background: url(../img/med-claim.jpg) no-repeat center top;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .med-claim i {
@@ -1434,6 +1439,7 @@ PANELS CONFIGURATIONS
     background-color: #061d29;
     text-align: center;
     background-position: center center;
+    cursor: pointer;
 }
 
 .useful-info i {

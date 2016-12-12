@@ -18,7 +18,7 @@
     <!-- Custom CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="assets/css/page-layout.css">
+    <link href="assets/css/page-layout.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/zabuto_calendar.css">
     <link rel="stylesheet" href="assets/js/gritter/css/jquery.gritter.css" />
@@ -26,7 +26,7 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
-    <link href="assets/css/to-do.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/to-do.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
@@ -118,504 +118,12 @@
             }
         }
     </style>
-    <script type="text/javascript" async="" src="./index_files/73473985=https-%2F%2Fwww.fwd.com.hk%2Fen%2F,67802474=https-%2F%2Fwww.fwd.com.hk%2Fen%2Fprotect%2F,67801833=https-%2F%2Fwww.fwd.com.hk%2Fen%2F,68120936=Mozilla%2F5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit%2F537.36 (KHTML, like.36,67802479=%2Fen%2F"></script>
     <script type="text/javascript" charset="UTF-8" src="./index_files/common.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./index_files/util.js"></script>
     <script type="text/javascript" charset="UTF-8" src="./index_files/stats.js"></script>
-    <style type="text/css">
-        .fb_hidden {
-            position: absolute;
-            top: -10000px;
-            z-index: 10001
-        }
-
-        .fb_reposition {
-            overflow: hidden;
-            position: relative
-        }
-
-        .fb_invisible {
-            display: none
-        }
-
-        .fb_reset {
-            background: none;
-            border: 0;
-            border-spacing: 0;
-            color: #000;
-            cursor: auto;
-            direction: ltr;
-            font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
-            font-size: 11px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: normal;
-            letter-spacing: normal;
-            line-height: 1;
-            margin: 0;
-            overflow: visible;
-            padding: 0;
-            text-align: left;
-            text-decoration: none;
-            text-indent: 0;
-            text-shadow: none;
-            text-transform: none;
-            visibility: visible;
-            white-space: normal;
-            word-spacing: normal
-        }
-
-        .fb_reset>div {
-            overflow: hidden
-        }
-
-        .fb_link img {
-            border: none
-        }
-
-        @keyframes fb_transform {
-            from {
-                opacity: 0;
-                transform: scale(.95)
-            }
-            to {
-                opacity: 1;
-                transform: scale(1)
-            }
-        }
-
-        .fb_animate {
-            animation: fb_transform .3s forwards
-        }
-
-        .fb_dialog {
-            background: rgba(82, 82, 82, .7);
-            position: absolute;
-            top: -10000px;
-            z-index: 10001
-        }
-
-        .fb_reset .fb_dialog_legacy {
-            overflow: visible
-        }
-
-        .fb_dialog_advanced {
-            padding: 10px;
-            -moz-border-radius: 8px;
-            -webkit-border-radius: 8px;
-            border-radius: 8px
-        }
-
-        .fb_dialog_content {
-            background: #fff;
-            color: #333
-        }
-
-        .fb_dialog_close_icon {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;
-            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);
-            cursor: pointer;
-            display: block;
-            height: 15px;
-            position: absolute;
-            right: 18px;
-            top: 17px;
-            width: 15px
-        }
-
-        .fb_dialog_mobile .fb_dialog_close_icon {
-            top: 5px;
-            left: 5px;
-            right: auto
-        }
-
-        .fb_dialog_padding {
-            background-color: transparent;
-            position: absolute;
-            width: 1px;
-            z-index: -1
-        }
-
-        .fb_dialog_close_icon:hover {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;
-            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
-        }
-
-        .fb_dialog_close_icon:active {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;
-            _background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)
-        }
-
-        .fb_dialog_loader {
-            background-color: #f6f7f9;
-            border: 1px solid #606060;
-            font-size: 24px;
-            padding: 20px
-        }
-
-        .fb_dialog_top_left,
-        .fb_dialog_top_right,
-        .fb_dialog_bottom_left,
-        .fb_dialog_bottom_right {
-            height: 10px;
-            width: 10px;
-            overflow: hidden;
-            position: absolute
-        }
-
-        .fb_dialog_top_left {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;
-            left: -10px;
-            top: -10px
-        }
-
-        .fb_dialog_top_right {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;
-            right: -10px;
-            top: -10px
-        }
-
-        .fb_dialog_bottom_left {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;
-            bottom: -10px;
-            left: -10px
-        }
-
-        .fb_dialog_bottom_right {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;
-            right: -10px;
-            bottom: -10px
-        }
-
-        .fb_dialog_vert_left,
-        .fb_dialog_vert_right,
-        .fb_dialog_horiz_top,
-        .fb_dialog_horiz_bottom {
-            position: absolute;
-            background: #525252;
-            filter: alpha(opacity=70);
-            opacity: .7
-        }
-
-        .fb_dialog_vert_left,
-        .fb_dialog_vert_right {
-            width: 10px;
-            height: 100%
-        }
-
-        .fb_dialog_vert_left {
-            margin-left: -10px
-        }
-
-        .fb_dialog_vert_right {
-            right: 0;
-            margin-right: -10px
-        }
-
-        .fb_dialog_horiz_top,
-        .fb_dialog_horiz_bottom {
-            width: 100%;
-            height: 10px
-        }
-
-        .fb_dialog_horiz_top {
-            margin-top: -10px
-        }
-
-        .fb_dialog_horiz_bottom {
-            bottom: 0;
-            margin-bottom: -10px
-        }
-
-        .fb_dialog_iframe {
-            line-height: 0
-        }
-
-        .fb_dialog_content .dialog_title {
-            background: #6d84b4;
-            border: 1px solid #365899;
-            color: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            margin: 0
-        }
-
-        .fb_dialog_content .dialog_title>span {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;
-            float: left;
-            padding: 5px 0 7px 26px
-        }
-
-        body.fb_hidden {
-            -webkit-transform: none;
-            height: 100%;
-            margin: 0;
-            overflow: visible;
-            position: absolute;
-            top: -10000px;
-            left: 0;
-            width: 100%
-        }
-
-        .fb_dialog.fb_dialog_mobile.loading {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;
-            min-height: 100%;
-            min-width: 100%;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            z-index: 10001
-        }
-
-        .fb_dialog.fb_dialog_mobile.loading.centered {
-            width: auto;
-            height: auto;
-            min-height: initial;
-            min-width: initial;
-            background: none
-        }
-
-        .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner {
-            width: 100%
-        }
-
-        .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content {
-            background: none
-        }
-
-        .loading.centered #fb_dialog_loader_close {
-            color: #fff;
-            display: block;
-            padding-top: 20px;
-            clear: both;
-            font-size: 18px
-        }
-
-        #fb-root #fb_dialog_ipad_overlay {
-            background: rgba(0, 0, 0, .45);
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            width: 100%;
-            min-height: 100%;
-            z-index: 10000
-        }
-
-        #fb-root #fb_dialog_ipad_overlay.hidden {
-            display: none
-        }
-
-        .fb_dialog.fb_dialog_mobile.loading iframe {
-            visibility: hidden
-        }
-
-        .fb_dialog_content .dialog_header {
-            -webkit-box-shadow: white 0 1px 1px -1px inset;
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));
-            border-bottom: 1px solid;
-            border-color: #1d4088;
-            color: #fff;
-            font: 14px Helvetica, sans-serif;
-            font-weight: bold;
-            text-overflow: ellipsis;
-            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0;
-            vertical-align: middle;
-            white-space: nowrap
-        }
-
-        .fb_dialog_content .dialog_header table {
-            -webkit-font-smoothing: subpixel-antialiased;
-            height: 43px;
-            width: 100%
-        }
-
-        .fb_dialog_content .dialog_header td.header_left {
-            font-size: 12px;
-            padding-left: 5px;
-            vertical-align: middle;
-            width: 60px
-        }
-
-        .fb_dialog_content .dialog_header td.header_right {
-            font-size: 12px;
-            padding-right: 5px;
-            vertical-align: middle;
-            width: 60px
-        }
-
-        .fb_dialog_content .touchable_button {
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));
-            border: 1px solid #29487d;
-            -webkit-background-clip: padding-box;
-            -webkit-border-radius: 3px;
-            -webkit-box-shadow: rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;
-            display: inline-block;
-            margin-top: 3px;
-            max-width: 85px;
-            line-height: 18px;
-            padding: 4px 12px;
-            position: relative
-        }
-
-        .fb_dialog_content .dialog_header .touchable_button input {
-            border: none;
-            background: none;
-            color: #fff;
-            font: 12px Helvetica, sans-serif;
-            font-weight: bold;
-            margin: 2px -12px;
-            padding: 2px 6px 3px 6px;
-            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
-        }
-
-        .fb_dialog_content .dialog_header .header_center {
-            color: #fff;
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 18px;
-            text-align: center;
-            vertical-align: middle
-        }
-
-        .fb_dialog_content .dialog_content {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;
-            border: 1px solid #555;
-            border-bottom: 0;
-            border-top: 0;
-            height: 150px
-        }
-
-        .fb_dialog_content .dialog_footer {
-            background: #f6f7f9;
-            border: 1px solid #555;
-            border-top-color: #ccc;
-            height: 40px
-        }
-
-        #fb_dialog_loader_close {
-            float: left
-        }
-
-        .fb_dialog.fb_dialog_mobile .fb_dialog_close_button {
-            text-shadow: rgba(0, 30, 84, .296875) 0 -1px 0
-        }
-
-        .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon {
-            visibility: hidden
-        }
-
-        #fb_dialog_loader_spinner {
-            animation: rotateSpinner 1.2s linear infinite;
-            background-color: transparent;
-            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);
-            background-repeat: no-repeat;
-            background-position: 50% 50%;
-            height: 24px;
-            width: 24px
-        }
-
-        @keyframes rotateSpinner {
-            0% {
-                transform: rotate(0deg)
-            }
-            100% {
-                transform: rotate(360deg)
-            }
-        }
-
-        .fb_iframe_widget {
-            display: inline-block;
-            position: relative
-        }
-
-        .fb_iframe_widget span {
-            display: inline-block;
-            position: relative;
-            text-align: justify
-        }
-
-        .fb_iframe_widget iframe {
-            position: absolute
-        }
-
-        .fb_iframe_widget_fluid_desktop,
-        .fb_iframe_widget_fluid_desktop span,
-        .fb_iframe_widget_fluid_desktop iframe {
-            max-width: 100%
-        }
-
-        .fb_iframe_widget_fluid_desktop iframe {
-            min-width: 220px;
-            position: relative
-        }
-
-        .fb_iframe_widget_lift {
-            z-index: 1
-        }
-
-        .fb_hide_iframes iframe {
-            position: relative;
-            left: -10000px
-        }
-
-        .fb_iframe_widget_loader {
-            position: relative;
-            display: inline-block
-        }
-
-        .fb_iframe_widget_fluid {
-            display: inline
-        }
-
-        .fb_iframe_widget_fluid span {
-            width: 100%
-        }
-
-        .fb_iframe_widget_loader iframe {
-            min-height: 32px;
-            z-index: 2;
-            zoom: 1
-        }
-
-        .fb_iframe_widget_loader .FB_Loader {
-            background: url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;
-            height: 32px;
-            width: 32px;
-            margin-left: -16px;
-            position: absolute;
-            left: 50%;
-            z-index: 4
-        }
-    </style>
 </head>
 
 <body class="en" style="margin-top: 125px;">
-
-    <noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-M9TQRH" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./index_files/activityi.html"></iframe>
-    <script async="" src="./index_files/L21rdC80MTAvcGlkLzY3MDU4ODA0L3QvMA"></script>
-    <script type="text/javascript" async="" src="./index_files/analytics.js"></script>
-    <script type="text/javascript" async="" src="./index_files/tracking.js"></script>
-    <script id="facebook-jssdk" src="./index_files/all.js"></script>
-    <script async="" src="./index_files/gtm.js"></script>
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&amp;l=' + l : '';
-            j.async = true;
-            j.src =
-                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-M9TQRH');
-    </script>
-
 
     <header>
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -684,190 +192,10 @@
                                     <img src="./index_files/fwd-logo.png" alt="FWD Hong Kong" width="682" height="214">
                                 </a>
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li>
-                                        <a href="#" class="gtm-nav dropdown-toggle hvr-icon-rotate">
-                                            <span onclick="window.location = &#39;/en/protect&#39;;">Protect</span>
-
-
-                                        </a>
-                                        <div class="dropdown-menu col-xs-12">
-                                            <!-- Nav tabs -->
-                                            <ul class="dropdown-menu-nav nav nav-tabs" role="tablist">
-                                                <li role="presentation" class="active">
-                                                    <div class="thumbnail">
-                                                        <div class="caption">
-                                                            <div class="table">
-                                                                <a class="gtm-nav table-cell" href="#" data-target=".health-accident" role="tab" data-toggle="tab" onclick="window.location = &#39;/en/protect/health-accident&#39;;">
-                                                                    <span class="text-uppercase">Health &amp; Accident</span>
-                                                                    <img src="./index_files/Coverage-area---medical-1.png" alt="" width="90" height="90">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pointer"></div>
-                                                    </div>
-                                                </li>
-                                                <li role="presentation" class="">
-                                                    <div class="thumbnail">
-                                                        <div class="caption">
-                                                            <div class="table">
-                                                                <a class="gtm-nav table-cell" href="#" data-target=".life" role="tab" data-toggle="tab" onclick="window.location = &#39;/en/protect/life-insurance&#39;;">
-                                                                    <span class="text-uppercase">Life</span>
-                                                                    <img src="./index_files/icon-3.png" alt="" width="90" height="90">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pointer"></div>
-                                                    </div>
-                                                </li>
-                                                <li role="presentation" class="">
-                                                    <div class="thumbnail">
-                                                        <div class="caption">
-                                                            <div class="table">
-                                                                <a class="gtm-nav table-cell" href="#" data-target=".household" role="tab" data-toggle="tab" onclick="window.location = &#39;/en/protect/household-insurance&#39;;">
-                                                                    <span class="text-uppercase">Household</span>
-                                                                    <img src="./index_files/Home-01.png" alt="" width="90" height="90">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pointer"></div>
-                                                    </div>
-                                                </li>
-                                                <li role="presentation" class="">
-                                                    <div class="thumbnail">
-                                                        <div class="caption">
-                                                            <div class="table">
-                                                                <a class="gtm-nav table-cell" href="#" data-target=".travel" role="tab" data-toggle="tab" onclick="window.location = &#39;/en/protect/travel-insurance&#39;;">
-                                                                    <span class="text-uppercase">Travel</span>
-                                                                    <img src="./index_files/Plane-1.png" alt="" width="90" height="90">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pointer"></div>
-                                                    </div>
-                                                </li>
-                                                <li role="presentation" class="">
-                                                    <div class="thumbnail">
-                                                        <div class="caption">
-                                                            <div class="table">
-                                                                <a class="gtm-nav table-cell" href="#" data-target=".cars-boats" role="tab" data-toggle="tab" onclick="window.location = &#39;/en/protect/cars-boats-insurance&#39;;">
-                                                                    <span class="text-uppercase">Cars &amp; Boats</span>
-                                                                    <img src="./index_files/Car.png" alt="" width="90" height="90">
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="pointer"></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <!-- Tab panes -->
-                                            <div class="tab-content drop-down-menu-tab hidden-xs">
-                                                <div role="tabpanel" class="active tab-pane health-accident">
-                                                    <div class="row">
-                                                        <div class="col-sm-3">
-                                                            <div class="product-list">
-                                                                <ul class="list-group ">
-                                                                    <li class="list-group-item">
-                                                                        <div class="text-uppercase">
-                                                                            <a href="#">medical<i class="fa fa-caret-right"></i></a>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <div class="text-uppercase">
-                                                                            <a href="#">Critical Illness<i class="fa fa-caret-right"></i></a>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="list-group-item">
-                                                                        <div class="text-uppercase">
-                                                                            <a href="#">Accident &amp; Disability<i class="fa fa-caret-right"></i></a>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="content">
-                                                                <div class="col-sm-8">
-                                                                    <p>Protect what’s most precious: your health. We have a plan to suit, whether it’s for you or your loved ones. A Health &amp; Accident plan from FWD can help you concentrate on getting well
-                                                                        and live life the way you want, without worrying too much about possible financial pressure.</p>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <img alt="" width="187" height="150" class="img-bg" style="background-image: url(&quot;/~/media/Images/FWDHK/products/protect/health-accident/Health-Accident-Menu.jpg?h=150&amp;la=en&amp;w=187&amp;hash=E06BE4AD7144929ABB34F677A10CC160C6BEF362&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div role="tabpanel" class=" tab-pane life">
-                                                    <div class="row">
-                                                        <div class="col-sm-10 col-sm-offset-1">
-                                                            <div class="content">
-                                                                <div class="col-sm-8">
-                                                                    <p> Unleash your full potential and create a lifestyle you want with protection from FWD. Whether it’s a term life cover for your first mortgage, or a life cover with savings for starting
-                                                                        your own business, our life insurance plans are tailored to meet your needs.</p>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <img alt="" width="230" height="150" class="img-bg" style="background-image: url(&quot;/~/media/Images/FWDHK/products/protect/life/Life-Insurance-menu.jpg?h=150&amp;la=en&amp;w=230&amp;hash=7F5077B21F30683DD26DF9E047FC452A1CC23ABD&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div role="tabpanel" class=" tab-pane household">
-                                                    <div class="row">
-                                                        <div class="col-sm-10 col-sm-offset-1">
-                                                            <div class="content">
-                                                                <div class="col-sm-8">
-                                                                    <p> </p>
-                                                                    <p>You have worked hard to build a perfect home that is safe for you and your family, and we want to help you protect it against any unexpected events with our household insurance plans,
-                                                                        which include protection even for your helpers and pets.</p>
-                                                                    <br>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <img alt="" width="230" height="150" class="img-bg" style="background-image: url(&quot;/~/media/Images/FWDHK/products/protect/household/Household-Insurance-menu.jpg?h=150&amp;la=en&amp;w=230&amp;hash=EF5E9B05A1E3C93FFE1556EEC092AE29DC4142A3&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div role="tabpanel" class=" tab-pane travel">
-                                                    <div class="row">
-                                                        <div class="col-sm-10 col-sm-offset-1">
-                                                            <div class="content">
-                                                                <div class="col-sm-8">
-                                                                    <p> Sipping wine in Bordeaux, studying arts in Italy, or taking a one-year working holiday in New Zealand - the choice is yours! With our travel-related insurance plans, you can get ready
-                                                                        for your next trip knowing you are protected.</p>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <img alt="" width="230" height="150" class="img-bg" style="background-image: url(&quot;/~/media/Images/FWDHK/products/protect/travel/Travel-Insurance-menu.jpg?h=150&amp;la=en&amp;w=230&amp;hash=90B01CB8A71A870DF6B5D2614880F1304B9B7F47&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div role="tabpanel" class=" tab-pane cars-boats">
-                                                    <div class="row">
-                                                        <div class="col-sm-10 col-sm-offset-1">
-                                                            <div class="content">
-                                                                <div class="col-sm-8">
-                                                                    <p> Your cars and boats are no doubt your pride and joy! FWD will protect them from unpredictable accidents with a range of insurance policies.</p>
-                                                                </div>
-                                                                <div class="col-sm-4">
-                                                                    <img alt="" width="230" height="150" class="img-bg" style="background-image: url(&quot;/~/media/Images/FWDHK/products/protect/cars-boats/Cars-boats-menu.jpg?h=150&amp;la=en&amp;w=230&amp;hash=B5C54D57B2541ACE028B46EA8C7EB6D8540573B8&quot;);">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="gtm-nav">Invest</a> </li>
-                                    <li>
-                                        <a href="#" class="gtm-nav">Save</a> </li>
-                                    <li>
-                                        <a href="#" class="gtm-nav">Support &amp; Claims</a> </li>
-
+                                    <li><a href="#" class="gtm-nav">My Profile</a></li>
+                                    <li><a href="#" class="gtm-nav">Insurnace</a></li>
+                                    <li><a href="#" class="gtm-nav">Invest</a></li>
+                                    <li><a href="#" class="gtm-nav">Save</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -884,8 +212,6 @@
             </div>
         </nav>
     </header>
-
-
     <style>
         .heroimage {
             position: relative;
@@ -931,7 +257,6 @@
                 <div class="row">
                     <div class="col-lg-9 main-chart">
                         <div class="row">
-                            <!-- SERVER STATUS PANELS -->
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="enquiry pn">
                                     <i class="fa fa-question-circle fa-5x"></i>
@@ -963,7 +288,6 @@
 
 
                         <div class="row">
-                            <!-- TWITTER PANEL -->
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="selfservice pn">
                                     <i class="fa fa-user fa-5x"></i>
@@ -973,7 +297,6 @@
                             <!-- /col-md-4 -->
 
 
-                            <!-- INSTAGRAM PANEL -->
                             <div class="col-md-4 col-sm-4 mb">
                                 <div class="med-claim pn">
                                     <i class="fa fa-file-text fa-5x"></i>
@@ -994,147 +317,193 @@
                         </div>
                         <!-- /row -->
 
-                        <!-- SORTABLE TO DO LIST -->
+                        <!-- REMINDER -->
+                          <div class="row mt">
+                              <div class="col-md-12">
+                                  <section class="task-panel tasks-widget">
+            	                	<div class="panel-heading">
+            	                        <div class="pull-left"><h5><i class="fa fa-tasks"></i> Reminder</h5></div>
+            	                        <br>
+            	                 	</div>
+                                      <div class="panel-body">
+                                          <div class="task-content">
 
-                        <div class="row mb">
-                            <!--/col-md-6 -->
+                                              <ul class="task-list">
+                                                  <li>
+                                                      <div class="task-checkbox">
+                                                          <input type="checkbox" class="list-child" value=""  />
+                                                      </div>
+                                                      <div class="task-title">
+                                                          <span class="task-title-sp">Your monthly medical insurance is due.</span>
+                                                          <span class="badge bg-important">Attention</span>
+                                                          <div class="pull-right hidden-phone">
+                                                              <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li>
+                                                      <div class="task-checkbox">
+                                                          <input type="checkbox" class="list-child" value=""  />
+                                                      </div>
+                                                      <div class="task-title">
+                                                          <span class="task-title-sp">Your medical claim process is completed. Check your <a href="#">statement here</a>.</span>
+                                                          <span class="badge bg-info">Completed</span>
+                                                          <div class="pull-right hidden-phone">
+                                                              <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li>
+                                                      <div class="task-checkbox">
+                                                          <input type="checkbox" class="list-child" value=""  />
+                                                      </div>
+                                                      <div class="task-title">
+                                                          <span class="task-title-sp">You are eligible for the annual body check up. Check for <a href="#">more detail</a>.</span>
+                                                          <span class="badge bg-success">Ready</span>
+                                                          <div class="pull-right hidden-phone">
+                                                              <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                              </ul>
+                                          </div>
+
+                                          <div class=" add-task-row">
+                                              <a class="btn btn-theme btn-sm pull-left" href="#">Add New Tasks</a>
+                                              <a class="btn btn-danger btn-sm pull-right" href="#">Delete Selected Tasks</a>
+                                          </div>
+                                      </div>
+                                  </section>
+                              </div><!-- /col-md-12-->
+                          </div><!-- /row -->
+                          <!-- CALENDAR-->
+                          <div class="row mt">
                             <div class="col-md-12">
-                                <section class="task-panel tasks-widget">
+                              <div id="calendar">
+                                  <div class="task-panel tasks-widget">
+                                      <div class="panel-heading">
+                                          <div class="pull-left">
+                                              <h5><i class="fa fa-calendar"></i> Calendar</h5></div>
+                                          <br>
+                                      </div>
+
+                                      <div class="panel-body">
+                                          <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
+                                              <div class="arrow"></div>
+                                              <h3 class="popover-title" style="disadding: none;"></h3>
+                                              <div id="date-popover-content" class="popover-content"></div>
+                                          </div>
+                                          <div id="my-calendar"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          <!-- / calendar -->
+                          </div>
+
+                    </div>
+                    <!-- /col-lg-9 END SECTION MIDDLE -->
+
+
+  <!-- **********************************************************************************************************************************************************
+  RIGHT SIDEBAR CONTENT
+  *********************************************************************************************************************************************************** -->
+
+                    <div class="col-lg-3 main-chart">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Favourite panel -->
+                                <div class="task-panel tasks-widget mb">
                                     <div class="panel-heading">
                                         <div class="pull-left">
-                                            <h5><i class="fa fa-tasks"></i> History</h5></div>
+                                            <h5><i class="fa fa-star"></i> Favorite Documents</h5>
+                                        </div>
                                         <br>
                                     </div>
                                     <div class="panel-body">
                                         <div class="task-content">
                                             <ul id="sortable" class="task-list">
                                                 <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp">You have submitted a <a href="#">medical claim</a>.</span>
-                                                        <div class="pull-right">11/11/2016</div>
+                                                        <span class="task-title-sp"><a href="">Medical Claim Form</a></span>
                                                     </div>
-
                                                 </li>
 
-                                                <li class="list-danger">
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp">You have received your <a href="#">monthly statement</a>.</span>
-                                                        <div class="pull-right">11/11/2016</div>
+                                                        <span class="task-title-sp"><a href="">Travel Insurance</a></span>
                                                     </div>
-
                                                 </li>
-                                                <li class="list-success">
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp">You have received your <a href="#">monthly statement</a>.</span>
-                                                        <div class="pull-right">11/11/2016</div>
-                                                        <!-- <span class="badge bg-success">2 Days</span> -->
+                                                        <span class="task-title-sp"><a href="">MPF Form</a></span>
                                                     </div>
-
                                                 </li>
-                                                <li class="list-warning">
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp">You have received your <a href="#">monthly statement</a>.</span>
-                                                        <div class="pull-right">11/11/2016</div>
-                                                        <!-- <span class="badge bg-info">Tomorrow</span> -->
+                                                        <span class="task-title-sp"><a href="">Surgical Claim Form</a></span>
                                                     </div>
-
+                                                </li>
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <div class="task-title">
+                                                        <span class="task-title-sp"><a href="">Dential Claim Form</a></span>
+                                                    </div>
                                                 </li>
 
                                             </ul>
                                         </div>
                                         <div class=" add-task-row">
+                                            <a class="btn btn-theme btn-sm pull-left" href="#">Add New</a>
                                             <a class="btn btn-default btn-sm pull-right" href="#">See All</a>
                                         </div>
                                     </div>
-                                </section>
-                            </div>
-
-                        </div>
-                        <!-- /row -->
-
-                    </div>
-                    <!-- /col-lg-9 END SECTION MIDDLE -->
-
-
-                    <!-- **********************************************************************************************************************************************************
-  RIGHT SIDEBAR CONTENT
-  *********************************************************************************************************************************************************** -->
-
-                    <div class="col-lg-3 main-chart">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="task-panel tasks-widget mb">
-                              <div class="panel-heading">
-                                  <div class="pull-left">
-                                      <h5><i class="fa fa-star"></i> Favorite Documents</h5></div>
-                                  <br>
-                              </div>
-                              <div class="panel-body">
-                                  <div class="task-content">
-                                      <ul id="sortable" class="task-list">
-                                          <li class="list-primary">
-                                              <i class="fa fa-file-text"></i>
-                                              <div class="task-title">
-                                                  <span class="task-title-sp"><a href="">Medical Claim Form</a></span>
-                                              </div>
-                                          </li>
-
-                                          <li class="list-danger">
-                                              <i class="fa fa-file-text"></i>
-                                              <div class="task-title">
-                                                  <span class="task-title-sp"><a href="">Travel Insurance</a></span>
-                                              </div>
-                                          </li>
-                                          <li class="list-success">
-                                              <i class="fa fa-file-text"></i>
-                                              <div class="task-title">
-                                                  <span class="task-title-sp"><a href="">MPF Form</a></span>
-                                              </div>
-                                          </li>
-                                          <li class="list-warning">
-                                              <i class="fa fa-file-text"></i>
-                                              <div class="task-title">
-                                                  <span class="task-title-sp"><a href="">Surgical Claim Form</a></span>
-                                              </div>
-                                          </li>
-                                          <li class="list-info">
-                                              <i class="fa fa-file-text"></i>
-                                              <div class="task-title">
-                                                  <span class="task-title-sp"><a href="">Dential Claim Form</a></span>
-                                              </div>
-                                          </li>
-
-                                      </ul>
-                                  </div>
-                                  <div class=" add-task-row">
-                                      <a class="btn btn-theme btn-sm pull-left" href="todo_list.html#">Add New</a>
-                                      <a class="btn btn-default btn-sm pull-right" href="#">See All</a>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- CALENDAR-->
-                          <div id="calendar" class="mb">
-                              <div class="task-panel tasks-widget">
-                                <div class="panel-heading">
-                                    <div class="pull-left">
-                                        <h5><i class="fa fa-calendar"></i> Calendar</h5></div>
-                                    <br>
                                 </div>
+                                <!-- Favourite panel End -->
 
-                                  <div class="panel-body">
-                                      <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
-                                          <div class="arrow"></div>
-                                          <h3 class="popover-title" style="disadding: none;"></h3>
-                                          <div id="date-popover-content" class="popover-content"></div>
-                                      </div>
-                                      <div id="my-calendar"></div>
-                                  </div>
-                              </div>
-                          </div>
-                          <!-- / calendar -->
+                                <!-- History panel -->
+                                <div class="task-panel tasks-widget mb">
+                                    <div class="panel-heading">
+                                        <div class="pull-left">
+                                            <h5><i class="fa fa-star"></i> History</h5>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="task-content">
+                                            <ul id="sortable" class="task-list">
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <div class="task-title">
+                                                        <span class="task-title-sp">You have submitted a <a href="#">medical claim</a>.</span>
+                                                    </div>
+                                                </li>
 
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <div class="task-title">
+                                                        <span class="task-title-sp">You have received your <a href="#">monthly statement</a>.</span>
+                                                    </div>
+                                                </li>
+                                                <li class="list-primary">
+                                                    <i class="fa fa-file-text"></i>
+                                                    <div class="task-title">
+                                                        <span class="task-title-sp">You have received your <a href="#">monthly statement</a>.</span>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- History panel End -->
+
+                            </div>
                         </div>
-                      </div>
 
                     </div>
                     <!-- /col-lg-3 -->
