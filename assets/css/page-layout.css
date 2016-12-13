@@ -10636,7 +10636,7 @@ td, th {
 @font-face {
     font-family: 'Glyphicons Halflings';
     src: url(../fonts/glyphicons-halflings-regular.eot);
-    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }
 
 .glyphicon {
@@ -14144,7 +14144,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 
 .input-group-btn {
     position: relative;
-    font-size: 0;
+    /*font-size: 0;*/
     white-space: nowrap
 }
 
@@ -16765,34 +16765,6 @@ button.close {
     content: "\e800"
 }
 
-@font-face {
-    font-family: focoblack;
-    src: url(../fonts/CircularPro-Black.otf) format('opentype'), url(../fonts/CircularPro-Black.ttf) format('truetype'), url(../fonts/CircularPro-Black.woff) format('woff');
-    font-weight: bolder;
-    font-style: normal
-}
-
-@font-face {
-    font-family: focobold;
-    src: url(../fonts/CircularPro-Bold.otf) format('opentype'), url(../fonts/CircularPro-Bold.ttf) format('truetype'), url(../fonts/CircularPro-Bold.woff) format('woff');
-    font-weight: 700;
-    font-style: normal
-}
-
-@font-face {
-    font-family: focoregular;
-    src: url(../fonts/CircularPro-Book.otf) format('opentype'), url(../fonts/CircularPro-Book.ttf) format('truetype'), url(../fonts/CircularPro-Book.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: fwdIconfont;
-    src: url(../fonts/fwdIconfont.eot?coatm8);
-    src: url(../fonts/fwdIconfont.eot?coatm8#iefix) format('embedded-opentype'), url(../fonts/fwdIconfont.ttf?coatm8) format('truetype'), url(../fonts/fwdIconfont.woff?coatm8) format('woff'), url(../fonts/fwdIconfont.svg?coatm8#fwdIconfont) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
 
 [class*=" icon-"], [class^=icon-] {
     font-family: fwdIconfont;
@@ -17492,7 +17464,7 @@ button.close {
 @media (max-width:767px) {
     .btn {
         font-size: 16px;
-        width: 100%;
+        /*width: 100%;*/
         min-width: 0;
         /*max-width: 248px*/
     }
@@ -18160,18 +18132,6 @@ footer .social-nav a {
 footer .social-nav a:hover {
     opacity: 1;
     filter: alpha(opacity=100)
-}
-
-footer .sp-link {
-    line-height: 1.6
-}
-
-footer .sp-link>i {
-    background: url(../img/sprite/link.png) no-repeat;
-    background-size: contain;
-    width: 22px;
-    height: 22px;
-    display: inline-block
 }
 
 footer .control-label {

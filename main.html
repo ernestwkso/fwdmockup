@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/page-layout.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/zabuto_calendar.css">
@@ -639,7 +640,7 @@
         </div>
     </footer>
 
-
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
 
@@ -710,42 +711,6 @@
         }
     </script>
 
-    <script type="text/javascript">
-        var detectIE = function() {
-            var edge, msie, rv, trident, ua;
-            ua = window.navigator.userAgent;
-            msie = ua.indexOf('MSIE ');
-            if (msie > 0) {
-                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
-            }
-            trident = ua.indexOf('Trident/');
-            if (trident > 0) {
-                rv = ua.indexOf('rv:');
-                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
-            }
-            edge = ua.indexOf('Edge/');
-            if (edge > 0) {
-                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
-            }
-            return false;
-        };
-
-        $(document).ready(function() {
-
-            $('.zh-hk #form1').validator();
-
-            var IEversion = detectIE();
-            if (IEversion !== false) {
-                if (IEversion <= 9) {
-
-                    $('#ie9below').modal('show');
-                    $('.overlay .ie9below').show();
-                    $('.overlay .ie9above').hide();
-                    $('.overlay .confirm').prop('disabled', false);
-                }
-            }
-        })
-    </script>
 
 </body>
 

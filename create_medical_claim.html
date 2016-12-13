@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/page-layout.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/zabuto_calendar.css">
@@ -26,6 +27,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/to-do.css">
+    <link rel="stylesheet" href="assets/css/fileinput.min.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
@@ -302,11 +304,11 @@
                                           <label for="insuranceNo">Insurance Number</label>
                                           <select class="form-control" id="insuranceNo">
                                       <option>Please select</option>
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
-                                      <option>5</option>
+                                      <option>13432432</option>
+                                      <option>22343232</option>
+                                      <option>35435342</option>
+                                      <option>43243232</option>
+                                      <option>52342332</option>
                                     </select>
                                       </div>
                                       <div class="form-group">
@@ -335,9 +337,9 @@
                                       </div>
                                       <div class="form-group">
                                           <label for="medicalCert">Medical Certificate</label>
-                                          <input type="file" class="filestyle" data-buttonName="btn-primary">
+                                          <input id="file-demo" type="file" class="file" multiple=false data-preview-file-type="any" showRemove="false" showUpload="false">
                                       </div>
-                                      <button type="submit" class="btn btn-theme">Submit</button>
+                                      <button type="submit" class="btn btn-theme btn-lg btn-block">Next</button>
                                   </form>
                               </div>
                           </div>
@@ -597,12 +599,14 @@
     </footer>
 
 
+    <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
 
 
     <!--script for this page-->
     <script src="assets/js/zabuto_calendar.js"></script>
+    <script src="assets/js/fileinput.min.js"></script>
     <script type="application/javascript">
         $(document).ready(function() {
             $("#date-popover").popover({
@@ -645,6 +649,7 @@
     </script>
 
     <script type="text/javascript">
+
         var detectIE = function() {
             var edge, msie, rv, trident, ua;
             ua = window.navigator.userAgent;
@@ -664,21 +669,6 @@
             return false;
         };
 
-        $(document).ready(function() {
-
-            $('.zh-hk #form1').validator();
-
-            var IEversion = detectIE();
-            if (IEversion !== false) {
-                if (IEversion <= 9) {
-
-                    $('#ie9below').modal('show');
-                    $('.overlay .ie9below').show();
-                    $('.overlay .ie9above').hide();
-                    $('.overlay .confirm').prop('disabled', false);
-                }
-            }
-        })
     </script>
 
 </body>
