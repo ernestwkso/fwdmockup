@@ -1083,7 +1083,7 @@ PANELS CONFIGURATIONS
 /*Panel Size*/
 
 .pn {
-    height: 200px;
+    height: 150px;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -1309,7 +1309,7 @@ PANELS CONFIGURATIONS
 
 .enquiry i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .enquiry h2 {
@@ -1336,7 +1336,7 @@ PANELS CONFIGURATIONS
 
 .clinic i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .clinic h2 {
@@ -1363,7 +1363,7 @@ PANELS CONFIGURATIONS
 
 .group-med i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .group-med h2 {
@@ -1390,7 +1390,7 @@ PANELS CONFIGURATIONS
 
 .selfservice i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .selfservice h2 {
@@ -1417,7 +1417,7 @@ PANELS CONFIGURATIONS
 
 .med-claim i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .med-claim h2 {
@@ -1444,7 +1444,7 @@ PANELS CONFIGURATIONS
 
 .useful-info i {
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .useful-info h2 {
@@ -1457,299 +1457,6 @@ PANELS CONFIGURATIONS
     font-weight: 900;
     letter-spacing: 1px;
     padding-top: 10px;
-}
-
-
-/*WEATHER PANELS*/
-
-
-/* Weather 1 */
-
-.weather {
-    background: url(../img/weather.jpg) no-repeat center top;
-    text-align: center;
-    background-position: center center;
-}
-
-.weather i {
-    color: white;
-    margin-top: 45px;
-}
-
-.weather h2 {
-    color: white;
-    font-weight: 900;
-}
-
-.weather h4 {
-    color: white;
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-
-
-/* Weather 2 */
-
-.weather-2 {
-    background: #e9f0f4;
-}
-
-.weather-2 .weather-2-header {
-    background: #54bae6;
-    padding-top: 5px;
-    margin-bottom: 5px;
-}
-
-.weather-2 .weather-2-header p {
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.weather-2 .weather-2-header p small {
-    font-size: 10px;
-}
-
-.weather-2 .data {
-    margin-right: 10px;
-    margin-left: 10px;
-    color: #272b34;
-}
-
-.weather-2 .data h5 {
-    margin-top: 0px;
-    font-weight: lighter;
-}
-
-.weather-2 .data h1 {
-    margin-top: 2px;
-}
-
-
-/* Weather 3 */
-
-.weather-3 {
-    background: #ffcf00;
-}
-
-.weather-3 i {
-    color: white;
-    margin-top: 30px;
-    font-size: 70px;
-}
-
-.weather-3 h1 {
-    margin-top: 10px;
-    color: white;
-    font-weight: 900;
-}
-
-.weather-3 .info {
-    background: #f2f2f2;
-}
-
-.weather-3 .info i {
-    font-size: 15px;
-    color: #c2c2c2;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-
-.weather-3 .info h3 {
-    font-weight: 900;
-    margin-bottom: 0px;
-}
-
-.weather-3 .info p {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 16px;
-    color: #c2c2c2;
-    font-size: 15px;
-    font-weight: 700;
-}
-
-
-/*Twitter Panel*/
-
-.twitter-panel {
-    background: #4fc1e9;
-    text-align: center;
-}
-
-.twitter-panel i {
-    color: white;
-    margin-top: 40px;
-}
-
-.twitter-panel p {
-    color: #f5f5f5;
-    margin: 10px;
-}
-
-.twitter-panel .user {
-    color: white;
-    font-weight: 900;
-}
-
-
-/* Instagram Panel*/
-
-.instagram-panel {
-    background: url(../img/instagram.jpg) no-repeat center top;
-    text-align: center;
-    background-position: center center;
-}
-
-.instagram-panel i {
-    color: white;
-    margin-top: 35px;
-}
-
-.instagram-panel p {
-    margin: 5px;
-    color: white;
-}
-
-
-/* Product Panel */
-
-.product-panel {
-    background: #dadad2;
-    text-align: center;
-    padding-top: 50px;
-    height: 100%;
-}
-
-
-/* Product Panel 2*/
-
-.product-panel-2 {
-    background: #dadad2;
-    text-align: center;
-}
-
-.product-panel-2 .badge {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-}
-
-.badge-hot {
-    background: #ed5565;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    border-radius: 100%;
-}
-
-
-/* Soptify Panel */
-
-#spotify {
-    background: url(../img/lorde.jpg) no-repeat center top;
-    margin-top: -15px;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 220px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#spotify .btn-clear-g {
-    top: 15%;
-    right: 10px;
-    position: absolute;
-    margin-top: 5px;
-}
-
-#spotify .sp-title {
-    bottom: 15%;
-    left: 25px;
-    position: absolute;
-    color: #efefef;
-}
-
-#spotify .sp-title h3 {
-    font-weight: 900;
-}
-
-#spotify .play {
-    bottom: 18%;
-    right: 25px;
-    position: absolute;
-    color: #efefef;
-    font-size: 20px
-}
-
-.followers {
-    margin-left: 5px;
-    margin-top: 5px;
-}
-
-
-/* BLOG PANEL */
-
-#blog-bg {
-    background: url(../img/blog-bg.jpg) no-repeat center top;
-    margin-top: -15px;
-    background-attachment: relative;
-    background-position: center center;
-    min-height: 150px;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-#blog-bg .badge {
-    position: absolute;
-    top: 20px;
-    left: 35px;
-}
-
-.badge-popular {
-    background: #3498db;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 13px;
-    color: #fff;
-    text-align: center;
-    border-radius: 100%;
-}
-
-.blog-title {
-    background: rgba(0, 0, 0, 0.5);
-    bottom: 100px;
-    padding: 6px;
-    color: white;
-    font-weight: 700;
-    position: absolute;
-    display: block;
-    width: 120px;
-}
-
-.blog-text {
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-top: 15px;
-    font-size: 12px;
 }
 
 
