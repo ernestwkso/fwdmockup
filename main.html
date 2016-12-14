@@ -298,10 +298,22 @@
 
 
                             <div class="col-md-4 col-xs-6 mb">
-                                <div class="med-claim pn" onclick="location.href='claims.html';">
+
+                              <div class="dropdown">
+                                <div class="med-claim pn dropdown-toggle" id="claims" data-toggle="dropdown">
                                     <i class="fa fa-file-text fa-5x"></i>
                                     <h4>CLAIMS</h4>
                                 </div>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="claims">
+                                  <li role="presentation"><a role="menuitem" href="claims_enquiry.html">Claims Enquiry</a></li>
+                                  <li role="presentation"><a role="menuitem" href="hospitalization_claim.html">Hospitalization</a></li>
+                                  <li role="presentation"><a role="menuitem" href="#">Personal Accident</a></li>
+                                  <li role="presentation"><a role="menuitem" href="https://i.fwd.com.hk/en/travel-insurance">Single Trip TravelCare</a></li>
+                                  <li role="presentation"><a role="menuitem" href="#">Easy HomeCare</a></li>
+                                  <li role="presentation"><a role="menuitem" href="#">Claims Procedures</a></li>
+                                  <li role="presentation"><a role="menuitem" href="https://www.fwd.com.hk/en/support-claims/forms-listing/">Claim Forms Download</a></li>
+                                </ul>
+                              </div>
                             </div>
                             <!-- /col-md-4 -->
 
@@ -427,7 +439,7 @@
                                                 <li class="list-primary">
                                                     <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp"><a href="create_medical_claim.html">Medical Claim Form</a></span>
+                                                        <span class="task-title-sp"><a href="hospitalization_claim.html">Hospitalization Form</a></span>
                                                     </div>
                                                 </li>
 
@@ -531,7 +543,7 @@
 
     <!---- footer---->
     <footer>
-        <span id="top-link-block" class="affix-top" style="right: 210px;">
+        <span id="top-link-block" class="affix-top" >
         <a href="https://www.fwd.com.hk/en/#top" class="text-center btn btn-default" onclick="$(&#39;html,body&#39;).animate({scrollTop:0},&#39;slow&#39;);return false;">
             <i class="fa fa-caret-up"></i>Top
         </a>

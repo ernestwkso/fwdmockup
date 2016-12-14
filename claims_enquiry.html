@@ -17,7 +17,7 @@
     <!-- Custom CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/page-layout.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/zabuto_calendar.css">
@@ -27,7 +27,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/to-do.css">
-    <link rel="stylesheet" href="assets/css/fileinput.min.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
@@ -79,7 +78,6 @@
         </style>
         <![endif]-->
     <style>
-
         @media all and (-ms-high-contrast:none) {
             body.en .btn {
                 padding: 11px 20px 7px;
@@ -136,6 +134,7 @@
                             <div class="row">
                                 <ul class="nav navbar-nav left">
                                     <li class="text-center">
+
                                         <a class="gtm-nav" href="main.html" title="EN" lang="en">EN</a>
                                     </li>
                                     <li class="text-center">
@@ -255,7 +254,6 @@
                 </div>
             </div>
 
-
         </div>
     </section>
 
@@ -267,96 +265,157 @@
                 <div class="row">
                     <div class="col-lg-9 main-chart">
                       <div class="row">
-                          <ol class="breadcrumb ">
+                          <ol class="breadcrumb col-sm-8">
                               <li><a href="main.html">Home</a></li>
-                              <li><a href="claims.html">My Claims</a></li>
-                              <li class="active">Medical Claim Form</li>
+                              <li class="active">Claims Enquiry</li>
+
                           </ol>
+                          <div class="col-sm-4">
+                              <div class="panel-body row">
+                                  <a href="hospitalization_claim.html" class="btn btn-primary btn-block text-uppercase btn-lg">Create New Claim</a>
+                              </div>
+                          </div>
                       </div>
-                      <div class="showback">
-                          <div class="row mb">
-                              <div class="row bs-wizard" style="border-bottom:0;">
-
-                                  <div class="col-xs-3 bs-wizard-step active">
-                                      <div class="text-center bs-wizard-stepnum">Step 1</div>
-                                      <div class="progress">
-                                          <div class="progress-bar"></div>
-                                      </div>
-                                      <a href="#" class="bs-wizard-dot"></a>
-                                  </div>
-
-                                  <div class="col-xs-3 bs-wizard-step disabled">
-                                      <div class="text-center bs-wizard-stepnum">Step 2</div>
-                                      <div class="progress">
-                                          <div class="progress-bar"></div>
-                                      </div>
-                                      <a href="#" class="bs-wizard-dot"></a>
-                                  </div>
-
-                                  <div class="col-xs-3 bs-wizard-step disabled">
-                                      <div class="text-center bs-wizard-stepnum">Step 3</div>
-                                      <div class="progress">
-                                          <div class="progress-bar"></div>
-                                      </div>
-                                      <a href="#" class="bs-wizard-dot"></a>
-                                  </div>
-
-                                  <div class="col-xs-3 bs-wizard-step disabled">
-                                      <div class="text-center bs-wizard-stepnum">Step 4</div>
-                                      <div class="progress">
-                                          <div class="progress-bar"></div>
-                                      </div>
-                                      <a href="#" class="bs-wizard-dot"></a>
-                                  </div>
+                      <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Termlife Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>93958291</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-info">Submitted</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>15 Oct 2016</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Car Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>2132123</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-success">Approved</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>15 Oct 2016</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Termlife Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>93958291</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-success">Approved</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>15 Oct 2016</td>
+                                      </tr>
+                                  </table>
                               </div>
                           </div>
-                          <!-- SORTABLE TO DO LIST -->
-
-                          <div class="row mb">
-                              <div class="col-md-12">
-                                  <form>
-                                      <div class="form-group">
-                                          <label for="insuranceNo">Policy Number</label>
-                                          <select class="form-control" id="insuranceNo">
-                                      <option>Please select</option>
-                                      <option>13432432</option>
-                                      <option>22343232</option>
-                                      <option>35435342</option>
-                                    </select>
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="admissionDate">Admission Date</label>
-                                          <input type="date" class="form-control" id="admissionDate" placeholder="Date">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="dischargeDate">Discharge Date</label>
-                                          <input type="date" class="form-control" id="DischargeDate" placeholder="Date">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="insuredName">Name of Insured Person</label>
-                                          <input type="text" class="form-control" id="insuredName">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="contactName">Name of Contact Person</label>
-                                          <input type="text" class="form-control" id="contactName">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="tel">Telephone Number</label>
-                                          <input type="tel" class="form-control" id="tel">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="email">Email</label>
-                                          <input type="email" class="form-control" id="email">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="medicalCert">Medical Certificate</label>
-                                          <input id="file-demo" type="file" class="file" multiple=false data-preview-file-type="any" showRemove="false" showUpload="false">
-                                      </div>
-                                      <button type="submit" class="btn btn-theme btn-lg btn-block">Next</button>
-                                  </form>
+                          <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Travel Multi-Trip Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>32423423</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-info">Submitted</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>10 Sep 2016</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Paid On</td>
+                                          <td>12 Sep 2016</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Travel Multi-Trip Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>32423423</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-info">Submitted</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>10 Sep 2016</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Paid On</td>
+                                          <td>12 Sep 2016</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Travel Multi-Trip Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>32423423</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-info">Submitted</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>10 Sep 2016</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Paid On</td>
+                                          <td>12 Sep 2016</td>
+                                      </tr>
+                                  </table>
+                              </div>
+                              <div class="showback">
+                                  <h4 style="padding-bottom:10px;"><i class="fa fa-angle-right"></i> FWD Travel Multi-Trip Claim</h4>
+                                  <table class="table">
+                                      <tr>
+                                          <td>Policy Number</td>
+                                          <td>32423423</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Status</td>
+                                          <td><span class="text-info">Submitted</span></td>
+                                      </tr>
+                                      <tr>
+                                          <td>Submitted On</td>
+                                          <td>10 Sep 2016</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Paid On</td>
+                                          <td>12 Sep 2016</td>
+                                      </tr>
+                                  </table>
                               </div>
                           </div>
-                          <!-- /row -->
                       </div>
 
                     </div>
@@ -384,7 +443,7 @@
                                                 <li class="list-primary">
                                                     <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp"><a href="create_medical_claim.html">Medical Claim Form</a></span>
+                                                        <span class="task-title-sp"><a href="hospitalization_claim.html">Hospitalization Claim Form</a></span>
                                                     </div>
                                                 </li>
 
@@ -621,7 +680,7 @@
 
     <!--script for this page-->
     <script src="assets/js/zabuto_calendar.js"></script>
-    <script src="assets/js/fileinput.min.js"></script>
+
     <script type="application/javascript">
         $(document).ready(function() {
             $("#date-popover").popover({
@@ -664,7 +723,6 @@
     </script>
 
     <script type="text/javascript">
-
         var detectIE = function() {
             var edge, msie, rv, trident, ua;
             ua = window.navigator.userAgent;
@@ -684,6 +742,21 @@
             return false;
         };
 
+        $(document).ready(function() {
+
+            $('.zh-hk #form1').validator();
+
+            var IEversion = detectIE();
+            if (IEversion !== false) {
+                if (IEversion <= 9) {
+
+                    $('#ie9below').modal('show');
+                    $('.overlay .ie9below').show();
+                    $('.overlay .ie9above').hide();
+                    $('.overlay .confirm').prop('disabled', false);
+                }
+            }
+        })
     </script>
 
 </body>

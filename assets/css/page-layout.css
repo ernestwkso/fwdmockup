@@ -23989,7 +23989,7 @@ a[aria-expanded=true].hvr-icon-rotate:before {
     .jumbotron.half-text-title>.row {
         margin: 0 auto
     }
-    .dropdown-toggle:hover+.dropdown-menu {
+    /*.dropdown-toggle:hover+.dropdown-menu {
         height: 387px
     }
     .dropdown-toggle+.dropdown-menu {
@@ -24006,7 +24006,7 @@ a[aria-expanded=true].hvr-icon-rotate:before {
         -moz-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
         overflow: hidden
-    }
+    }*/
     .dropdown-toggle+.dropdown-menu .drop-down-menu-tab {
         background-color: #f1f1f1;
         transition: all .3s ease-in-out;
@@ -24096,8 +24096,8 @@ a[aria-expanded=true].hvr-icon-rotate:before {
         bottom: -1px
     }
     .dropdown-menu:hover {
-        height: 177px;
-        overflow: visible
+        /*height: 177px;
+        overflow: visible*/
     }
     .primary-nav .navbar-nav>li {
         display: table;
