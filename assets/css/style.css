@@ -1114,6 +1114,30 @@ PANELS CONFIGURATIONS
     margin-left: 5px;
 }
 
+/*Theme Panel*/
+
+.theme-panel {
+    background: #dfdfe1;
+}
+
+.theme-panel .theme-header {
+    text-align: center;
+    background: #f68b1f;
+    padding: 3px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.theme-panel h5 {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.theme-panel p {
+    margin-left: 5px;
+}
+
+
 
 /* Specific Conf for Donut Charts*/
 

@@ -13444,15 +13444,23 @@ select[multiple].input-lg, textarea.input-lg {
 }
 
 .btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    user-select: none
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -24411,11 +24419,14 @@ a[aria-expanded=true].hvr-icon-rotate:before {
     .container {
         width: 1024px
     }
+    body {
+      margin-top: 125px;
+    }
 }
 
 @media (max-width:984px) {
     body {
-        margin-top: 50px
+        margin-top: 50px;
     }
 }
 
@@ -24424,6 +24435,7 @@ a[aria-expanded=true].hvr-icon-rotate:before {
         width: auto
     }
     body {
+        margin-top: 50px;
         font-size: 16px
     }
 }
@@ -24545,5 +24557,9 @@ a[aria-expanded=true].hvr-icon-rotate:before {
         min-height: 1px!important;
         padding-left: 15px!important;
         padding-right: 15px!important
+    }
+
+    body {
+      margin-top: 50px;
     }
 }
