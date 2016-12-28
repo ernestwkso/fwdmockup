@@ -12963,7 +12963,7 @@ table td[class*=col-], table th[class*=col-] {
         margin-bottom: 0
     }
     .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
-        white-space: nowrap
+        /*white-space: nowrap*/
     }
     .table-responsive>.table-bordered {
         border: 0
