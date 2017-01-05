@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- <link href="assets/css/bootstrap.css" rel="stylesheet"> -->
     <link href="assets/css/page-layout.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/zabuto_calendar.css">
@@ -26,6 +27,8 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-responsive.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/to-do.css">
+    <link rel="stylesheet" href="assets/css/fileinput.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 
     <script src="assets/js/chart-master/Chart.js"></script>
 
@@ -133,7 +136,6 @@
                             <div class="row">
                                 <ul class="nav navbar-nav left">
                                     <li class="text-center">
-
                                         <a class="gtm-nav" href="main.html" title="EN" lang="en">EN</a>
                                     </li>
                                     <li class="text-center">
@@ -244,7 +246,7 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <h1 class="wow fadeInUp text-left" style="visibility: visible; animation-name: fadeInUp;">
-                                      Travel Insurance Card<br>
+                                            Travel Insurance Card
                                         </h1>
                                 </div>
                             </div>
@@ -252,6 +254,7 @@
                     </div>
                 </div>
             </div>
+
 
         </div>
     </section>
@@ -264,177 +267,27 @@
                 <div class="row">
                     <div class="col-lg-9 main-chart">
                         <div class="row">
-                            <div class="col-md-4 col-xs-6 mb">
-                                <div class="enquiry pn" onclick="location.href='policy_enquiry.html';">
-                                    <i class="fa fa-question-circle fa-5x"></i>
-                                    <h4>POLICY ENQUIRY</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4-->
-
-                            <div class="col-md-4 col-xs-6 mb">
-                                <div class="clinic pn">
-                                    <i class="fa fa-search fa-5x"></i>
-                                    <h4>CLINIC AND HOSPITAL SEARCH</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4 -->
-
-                            <div class="col-md-4 col-xs-6 mb">
-                                <div class="group-med pn">
-                                    <i class="fa fa-user fa-5x"></i>
-                                    <h4>GROUP MEDICAL</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4 -->
-
-                            <div class="col-md-4 col-xs-6 mb">
-                                <div class="selfservice pn" onclick="location.href='self_service_center.html';">
-                                    <i class="fa fa-user fa-5x"></i>
-                                    <h4>SELF SERVICE CENTER</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4 -->
-
-
-                            <div class="col-md-4 col-xs-6 mb">
-
-                                <div class="med-claim pn" role="button" data-toggle="collapse" href="#claimsCollapse" aria-expanded="false" aria-controls="claimsCollapse">
-                                    <i class="fa fa-file-text fa-5x"></i>
-                                    <h4>CLAIMS</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4 -->
-
-                            <div class="col-md-4 col-xs-6 mb">
-                                <div class="useful-info pn">
-                                    <i class="fa fa-info-circle fa-5x"></i>
-                                    <h4>USEFUL INFORMATION</h4>
-                                </div>
-                            </div>
-                            <!-- /col-md-4 -->
+                            <ol class="breadcrumb ">
+                              <li><a href="main.html">Home</a></li>
+                              <li>Self Service Center</li>
+                              <li class="active">Change of Contact Information</li>
+                            </ol>
                         </div>
-                        <!-- /row -->
+                        <div class="showback">
 
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="collapse" id="claimsCollapse">
-                              <div class="well">
-                                <div class="row">
-                                  <div class="col-md-3 col-xs-3 text-center">
-                                    <span class="text-uppercase">Medical</span><br>
-                                    <a href="hospitalization_claim_step1.html" ><img src="assets/img/icon-3.png" alt="Medical" width="90" height="90"></a>
-                                  </div>
-                                  <div class="col-md-3 col-xs-3 text-center">
-                                    <span class="text-uppercase">Household</span><br>
-                                    <a href="https://www.fwd.com.hk/en/protect/household-insurance/"><img src="assets/img/Home-01.png" alt="Household" width="90" height="90"></a>
-                                  </div>
-                                  <div class="col-md-3 col-xs-3 text-center">
-                                    <span class="text-uppercase">Travel</span><br>
-                                    <a href="https://i.fwd.com.hk/en/travel-insurance"><img src="assets/img/Plane-1.png" alt="Travel" width="90" height="90"></a>
-                                  </div>
-                                  <div class="col-md-3 col-xs-3 text-center">
-                                    <span class="text-uppercase">Car</span><br>
-                                    <a href="https://www.fwd.com.hk/en/protect/cars-boats-insurance/"><img src="assets/img/Car.png" alt="Car" width="90" height="90"></a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- REMINDER -->
-                        <div class="row mt">
-                            <div class="col-md-12">
-                                <section class="task-panel tasks-widget">
-                                    <div class="panel-heading">
-                                        <div class="pull-left">
-                                            <h5><i class="fa fa-tasks"></i> Reminder</h5></div>
-                                        <br>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="task-content">
-
-                                            <ul class="task-list">
-                                                <li>
-                                                    <div class="task-checkbox">
-                                                        <input type="checkbox" class="list-child" value="" />
-                                                    </div>
-                                                    <div class="task-title">
-                                                        <span class="task-title-sp">Your monthly medical insurance is due.</span>
-                                                        <span class="badge bg-important">Attention</span>
-                                                        <div class="pull-right hidden-phone">
-                                                            <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="task-checkbox">
-                                                        <input type="checkbox" class="list-child" value="" />
-                                                    </div>
-                                                    <div class="task-title">
-                                                        <span class="task-title-sp">Your medical claim process is completed. Check your <a href="#">statement here</a>.</span>
-                                                        <span class="badge bg-info">Completed</span>
-                                                        <div class="pull-right hidden-phone">
-                                                            <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="task-checkbox">
-                                                        <input type="checkbox" class="list-child" value="" />
-                                                    </div>
-                                                    <div class="task-title">
-                                                        <span class="task-title-sp">You are eligible for the annual body check up. Check for <a href="#">more detail</a>.</span>
-                                                        <span class="badge bg-success">Ready</span>
-                                                        <div class="pull-right hidden-phone">
-                                                            <button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class=" add-task-row">
-                                            <a class="btn btn-theme btn-sm pull-left" href="#">Add New Tasks</a>
-                                            <a class="btn btn-danger btn-sm pull-right" href="#">Delete Selected Tasks</a>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <!-- /col-md-12-->
-                        </div>
-                        <!-- /row -->
-                        <!-- CALENDAR-->
-                        <div class="row mt">
-                            <div class="col-md-12">
-                                <div id="calendar">
-                                    <div class="task-panel tasks-widget">
-                                        <div class="panel-heading">
-                                            <div class="pull-left">
-                                                <h5><i class="fa fa-calendar"></i> Calendar</h5></div>
-                                            <br>
-                                        </div>
-
-                                        <div class="panel-body">
-                                            <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
-                                                <div class="arrow"></div>
-                                                <h3 class="popover-title" style="disadding: none;"></h3>
-                                                <div id="date-popover-content" class="popover-content"></div>
-                                            </div>
-                                            <div id="my-calendar"></div>
-                                        </div>
-                                    </div>
+                            <div class="row mb">
+                                <div class="col-md-12">
+                                    <h3 class="text-center">Your change of contact information request has been submitted.</h3>
                                 </div>
                             </div>
-                            <!-- / calendar -->
+                            <!-- /row -->
                         </div>
 
                     </div>
                     <!-- /col-lg-9 END SECTION MIDDLE -->
 
 
-  <!-- **********************************************************************************************************************************************************
+                    <!-- **********************************************************************************************************************************************************
   RIGHT SIDEBAR CONTENT
   *********************************************************************************************************************************************************** -->
 
@@ -455,7 +308,7 @@
                                                 <li class="list-primary">
                                                     <i class="fa fa-file-text"></i>
                                                     <div class="task-title">
-                                                        <span class="task-title-sp"><a href="hospitalization_claim_step1.html">Hospitalization Form</a></span>
+                                                        <span class="task-title-sp"><a href="hospitalization_claim.html">Hospitalization Claim Form</a></span>
                                                     </div>
                                                 </li>
 
@@ -559,7 +412,7 @@
 
     <!---- footer---->
     <footer>
-        <span id="top-link-block" class="affix-top" >
+        <span id="top-link-block" class="affix-top" style="right: 210px;">
         <a href="https://www.fwd.com.hk/en/#top" class="text-center btn btn-default" onclick="$(&#39;html,body&#39;).animate({scrollTop:0},&#39;slow&#39;);return false;">
             <i class="fa fa-caret-up"></i>Top
         </a>
@@ -682,39 +535,30 @@
         </div>
     </footer>
 
+
     <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/main.min.js"></script>
     <script src="assets/js/js"></script>
     <script src="assets/js/getscript"></script>
+    <script src="assets/js/main.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
 
 
     <!--script for this page-->
     <script src="assets/js/zabuto_calendar.js"></script>
-    <script type="text/javascript" src="assets/js/gritter/js/jquery.gritter.js"></script>
-    <script type="text/javascript" src="assets/js/gritter-conf.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var unique_id = $.gritter.add({
-                // (string | mandatory) the heading of the notification
-                title: 'Paymend Reminder!',
-                // (string | mandatory) the text inside the notification
-                text: 'Your monthly medical insurance fee is due. Check your <a href="#" target="_blank" style="color:#ffd777">statement</a>.',
-                // (string | optional) the image to display on the left
-                //              image: 'assets/img/ui-sam.jpg',
-                // (bool | optional) if you want it to fade out on its own or just sit there
-                sticky: false,
-                // (int | optional) the time you want it to be alive for before fading out
-                time: '3000',
-                // (string | optional) the class name you want to apply to that specific message
-                class_name: 'my-sticky-class'
-            });
-
-            return false;
-        });
-    </script>
-
+    <script src="assets/js/fileinput.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script type="application/javascript">
+        $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+        });
+
         $(document).ready(function() {
             $("#date-popover").popover({
                 html: true,
@@ -755,6 +599,26 @@
         }
     </script>
 
+    <script type="text/javascript">
+        var detectIE = function() {
+            var edge, msie, rv, trident, ua;
+            ua = window.navigator.userAgent;
+            msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+            trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+            edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+            return false;
+        };
+    </script>
 
 </body>
 
