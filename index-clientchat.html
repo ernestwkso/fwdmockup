@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Insurance Chatbot | FWD</title>
+  
+  <meta name="description" content="Ask our chatbot about any policy information provided by FWD.">
+  <meta name="keywords" content="policy, claims, fwd, insurance,fwd insurance">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <!--[if lte IE 9]>
+    <meta http-equiv="refresh" content="0; url=error/incompatibleBrowser.html">
+  <![endif]-->
+
+  <!-- STYLES -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  
+  <!-- MODERNIZR -->
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body class="bg-1">
+  <!-- CONTENT -->
+  
+  <!-- Modal -->
+  <div class="modal fade feedback" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-label" aria-live="polite" aria-atomic="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close">Close <span class="icon icon-close-circle" aria-hidden="true"></span></a>
+          <h3 class="modal-title sr-only" id="feedback-modal-label">Share your feedback</h3>
+        </div>
+        <div class="modal-body">
+          <div class="feedback-step-1">
+            <p>How would you rate your overall experience with the insurance chatbot?</p>
+           
+            <div class="star-rating">
+              <p class="validation error" role="alert"></p>
+              <div class="stars" tabindex="0"><h2 class="sr-only">Enter your star rating (1 to 5 stars)</h2></div>
+            </div>
+
+            <textarea class="comments" rows="5" placeholder="Share any additional comments here..." aria-label="Share any additional comments about your experience with the FWD Insurance chatbot."></textarea>
+          </div>
+
+          <div class="feedback-step-2" aria-hidden="true">
+            <span class="icon icon-tick-circle" aria-hidden="true"></span>
+            <h3>Thank you!</h3>
+            <p>Thank you for taking the time to share your feedback. I will learn from your comments and suggestions, which will help to improve my understanding of future questions and requests.</p> 
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="feedback-step-1">
+            <button type="button" class="btn btn-primary" onclick="feedbackHandler('#feedback-modal');">Share feedback</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container flexbox">
+    
+    <div class="chat-header">
+      <div class="chat-header-container">
+        <div class="header_img_left"></div>
+        <div class="header_img_right"></div>
+      </div>
+    </div>
+    
+    <div class="chat-window" role="content">
+      <ul class="chat-list" aria-live="polite" aria-atomic="false">
+
+      
+        
+        <!-- <div class="chat-block" role="presentation">
+          <li class="chat-bubble vera " style=""> <span class="sr-only">Cathay Pacific: </span>Below is a summary of the free baggage allowance for your journey:
+            <div class="timestamp">
+              <time datetime="07 Dec 11:14">07 Dec 11:14</time>
+            </div>
+            <div class="chat-bubble-tail"></div>
+          </li>
+          
+          <li class="chat-bubble key-response vera " style=""> <span class="sr-only">Cathay Pacific: </span>
+            <div class="journey-summary">
+              <p>HONG KONG<i aria-hidden="true" class="icon icon-plane" lang="en"></i>MUNICH</p>
+              <ul>
+                <li>Business Class</li>
+                <li>No Marco Polo Club membership or <strong>one</strong>world tier status</li>
+              </ul>
+            </div>
+
+            <ul class="nav nav-pills">
+              <li role="presentation" class="active"><a href="#">Check-in baggage</a></li>
+              <li role="presentation"><a href="#">Cabin baggage</a></li>
+              <li role="presentation"><a href="#">Infant baggage</a></li>
+            </ul>
+
+
+            <table class="baggage-calc-response-2">
+              <tbody class="checkin">
+                <tr>
+                  <th class="allowance-type">
+                    <div class="icon"><img src="../img/icon/icon-checkin-baggage@2x.png" alt="Free check-in baggage allowance" width="45" height="45"></div>
+                    <h2 class="title">Check-in<br>baggage</h2></th>
+                  <td class="allowance">
+                    <h3 class="label-primary"><strong>40kg /88lbs</strong></h3>
+                    <p class="label-secondary">Total per passenger
+                      <br>(Maximum 2 pieces)</p>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr class="spacer">
+                  <td></td>
+                </tr>
+              </tbody>
+              <tbody class="infant">
+                <tr>
+                  <th class="allowance-type">
+                    <div class="icon"><img src="../img/icon/icon-infant-baggage@2x.png" alt="Free infant baggage allowance" width="45" height="45"></div>
+                    <h2 class="title">Infant <br> baggage</h2></th>
+                  <td class="allowance">
+                    <h3 class="label-primary"><strong>10kg /22lbs</strong></h3>
+                    <p class="label-secondary">Total for infant (not occupying a seat)
+                      <br>(Maximum 2 pieces)</p>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr class="spacer">
+                  <td></td>
+                </tr>
+              </tbody>
+              <tbody class="cabin">
+                <tr>
+                  <th class="allowance-type">
+                    <div class="icon"><img src="../img/icon/icon-carryon-baggage@2x.png" alt="Free cabin baggage allowance" width="45" height="45"></div>
+                    <h2 class="title">Cabin <br> baggage</h2></th>
+                  <td class="allowance">
+                    <h3 class="label-primary"><strong>10kg /22lbs</strong></h3>
+                    <p class="label-secondary">Total for 1 piece and an additional small item</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="panel-group additional-information accordion" id="additional-information-0" aria-multiselectable="false">
+              <div class="panel">
+                <div class="panel-heading" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#additional-information-0" aria-expanded="false" aria-controls="additional-information-body-0" id="additional-information-title" role="button" href="#additional-information-body-0"><span>A few additional notes about your baggage allowance</span><i aria-hidden="true" class="icon icon-expand" id="expand0" lang="en"></i><i aria-hidden="true" class="icon icon-collapse hidden" id="collapse0" lang="en"></i></a></div>
+                <div id="additional-information-body-0" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                  <p>Please note that the baggage allowance shown is only valid for flights to Cathay Pacific and Dragonair destinations (on flight numbers that start with CX or KA). For more information check out our <a href="http://www.cathaypacific.com/cx/en_HK/travel-information/baggage/check-in-baggage/carrier-rules.html" target="_blank">most significant carrier rules <span class="icon icon-newpage" aria-hidden="true" aria-label="opens in a new window"></span></a>.</p>
+                  <p><strong>For check-in baggage:</strong> each piece should be max 32kg / 70lbs and 158cm/62in in total dimension (sum of width, height and length)</p>
+                  <p><strong>For cabin baggage:</strong> max. dimensions 23cm/9in (H) x 36cm/14in (W) x 56cm/22in (L)</p>
+                  <p><strong>Small items:</strong> must fit under the seat in the front, in maximum dimensions of 15cm x 30cm x 40cm (6in x 12in x 16in). Examples include: small handbags, laptop bags, camera bags and briefcases.</p>
+                </div>
+              </div>
+            </div>
+            <div class="timestamp">
+              <time datetime="07 Dec 11:14">07 Dec 11:14</time>
+            </div>
+            <div class="chat-bubble-tail"></div>
+          </li>
+          <li class="chat-bubble vera " style=""> <span class="sr-only">Cathay Pacific: </span>Are you planning on checking in extra baggage (pieces or weight) for your journey?
+            <div class="timestamp">
+              <time datetime="07 Dec 11:14">07 Dec 11:14</time>
+            </div>
+            <div class="chat-bubble-tail"></div>
+          </li>
+        </div> -->
+
+      </ul>
+    </div> <!-- /.chat-window -->
+    
+    <div class="chat-footer">
+
+      <div class="chat-footer-shadow"></div>
+
+
+
+      <div class="chat-footer-container">
+
+      <div class="feedback-link-container">
+        <div class="feedback-link-floating">
+          <p><img src="img/icon/icon-feedback@2x.png" alt="Share your feedback and comments about this chat" /> <a href="#" data-toggle="modal" data-target="#feedback-modal">Share feedback</a></p>
+        </div>
+      </div>
+
+        <div class="row chat-footer-content">
+          <div class="col-xs-10">
+            <div class="chat-footer-message-entry">
+              <textarea rows="1" placeholder="Type your message" aria-label="Type your message to the FWD Insurance chatbot."></textarea>
+            </div>
+          </div>
+
+          <div class="col-xs-2">
+            <button type="submit" class="btn chat-send">Send</button>
+          </div>
+        </div> <!-- /.row -->
+
+        <div class="copyright"></div>
+      </div> <!-- /.chat-footer-container -->
+    </div> <!-- /.chat-footer -->
+
+  </div> <!-- /.container -->
+
+  <!-- AUDIO -->
+  <audio class="vera-message-audio" src="media/user.wav" type="audio/wav"></audio>
+  <audio class="user-message-audio" src="media/user.wav" type="audio/wav"></audio>
+  
+  <!-- SCRIPTS -->
+  <script src="js/vendor/jquery-3.1.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/vendor/moment.min.js"></script>
+  <script src="js/vendor/autosize.min.js"></script>
+  <script src="js/vendor/jquery.raty.js"></script>
+  <script src="js/vendor/readmore-jq3.js"></script>
+  <script src="js/socket.io.js"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function() {
+      init();
+    });
+    var curPlatform = window.location.href;
+    var mobile_app_screen_view = true;
+    if((curPlatform.indexOf('?platform=android') == -1) && (curPlatform.indexOf('?platform=ios') == -1)){
+        mobile_app_screen_view = false;
+    }
+    var date = new Date();
+    var currentTime = date.toISOString();
+    var country = "";
+    var locale = "";
+    var viewport = 'LARGE';
+    var login_status = 'LOGGED OUT';
+    
+  </script>
+</body>
+
+</html>

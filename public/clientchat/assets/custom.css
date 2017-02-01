@@ -1,0 +1,1640 @@
+@charset "UTF-8";
+/***********
+	Project Vera Test Messenger
+	Custom styles
+	(c) 2016 Cathay Pacific Airways Ltd.
+***********/
+/********** TEST **********/
+/* * {
+  outline: red solid 1px;
+} */
+/********** IMPORT **********/
+/********** MIXINS **********/
+/** With references from https://web-design-weekly.com/2013/05/12/handy-sass-mixins/ **/
+/********** FONTS **********/
+@font-face {
+  font-family: 'Cathay Pacific';
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Lt.eot");
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Lt.eot?#iefix") format("embedded-opentype"), url("../fonts/cathaypacific/CathayPacific_WCorp_Lt.woff") format("woff"), url("../fonts/cathaypacific/CathayPacific_WCorp_Lt.ttf") format("truetype"), url("../fonts/cathaypacific/CathayPacific_Lt.svg#Cathay Pacific Light") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cathay Pacific';
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Rg.eot");
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Rg.eot?#iefix") format("embedded-opentype"), url("../fonts/cathaypacific/CathayPacific_WCorp_Rg.woff") format("woff"), url("../fonts/cathaypacific/CathayPacific_WCorp_Rg.ttf") format("truetype"), url("../fonts/cathaypacific/CathayPacific_Rg.svg#Cathay Pacific") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cathay Pacific';
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Md.eot");
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Md.eot?#iefix") format("embedded-opentype"), url("../fonts/cathaypacific/CathayPacific_WCorp_Md.woff") format("woff"), url("../fonts/cathaypacific/CathayPacific_WCorp_Md.ttf") format("truetype"), url("../fonts/cathaypacific/CathayPacific_Md.svg#Cathay Pacific Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cathay Pacific';
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Bd.eot");
+  src: url("../fonts/cathaypacific/CathayPacific_WCorp_Bd.eot?#iefix") format("embedded-opentype"), url("../fonts/cathaypacific/CathayPacific_WCorp_Bd.woff") format("woff"), url("../fonts/cathaypacific/CathayPacific_WCorp_Bd.ttf") format("truetype"), url("../fonts/cathaypacific/CathayPacific_Bd.svg#Cathay Pacific Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CX Icons';
+  src: url("../fonts/cathaypacific/cx-icons.eot");
+  src: url("../fonts/cathaypacific/cx-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/cathaypacific/cx-icons.woff") format("woff"), url("../fonts/cathaypacific/cx-icons.ttf") format("truetype"), url("../fonts/cathaypacific/cx-icons.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/********** COLOURS **********/
+/********** STRUCTURE **********/
+/* line 259, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  font-size: 18px;
+  overflow: hidden;
+  color: #4c4c4c;
+  font-family: 'Cathay Pacific', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  padding: 20px 0px;
+}
+
+@media (max-width: 1023px) {
+  /* line 259, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  body, html {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 719px) {
+  /* line 259, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  body, html {
+    padding: 0px;
+    font-size: 16px;
+  }
+}
+
+/* line 282, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+body:hover .container, html:hover .container {
+  opacity: 1;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+/* line 290, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+body.bg-1, html.bg-1 {
+  background: url(../img/vera-bg-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 298, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+body.bg-2, html.bg-2 {
+  background: transparent linear-gradient(to top, #c6c2c1 -30px, #FFFFFF 100%) repeat scroll 0% 0%/auto padding-box border-box;
+}
+
+/* line 302, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+body.bg-3, html.bg-3 {
+  background: #006564 linear-gradient(to top, rgba(0, 0, 0, 0.2) -30px, rgba(255, 255, 255, 0.4) 100%) repeat scroll 0% 0%/auto padding-box border-box;
+}
+
+/* line 307, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.bg-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* line 314, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.container {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 0 auto 0 auto;
+  padding: 0;
+  opacity: 1;
+  position: relative;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+  -moz-transform: scale(0.995);
+  -o-transform: scale(0.995);
+  -ms-transform: scale(0.995);
+  -webkit-transform: scale(0.995);
+  transform: scale(0.995);
+}
+
+/* line 328, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.container .active {
+  opacity: 1;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 1023px) {
+  /* line 314, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .container {
+    opacity: 1;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 341, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.flexbox {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+/********** GENERAL TEXT STYLE **********/
+/* line 356, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+a {
+  color: #0f748f;
+}
+
+/* line 360, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.error {
+  color: #e32020;
+  font-size: 0.889rem;
+}
+
+/* line 365, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+h1, h2, h3 {
+  font-weight: 200;
+  line-height: normal;
+}
+
+/* line 371, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+h1 .emoji.robot {
+  width: 48px;
+  height: 48px;
+  margin-top: -12px;
+}
+
+/* line 378, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.help-text {
+  font-size: 0.889rem;
+  font-style: italic;
+}
+
+/* line 383, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.help-text-2 {
+  font-size: 0.889rem;
+  padding: 10px;
+  background: #FBF4E5;
+  border: 1px solid #c6c2c1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/* line 393, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon {
+  font-family: "CX Icons";
+  font-style: normal;
+  font-size: 0.8em;
+}
+
+/* line 398, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-arrow-down::before {
+  content: "\e600";
+}
+
+/* line 402, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-arrow-up::before {
+  content: "\e604";
+}
+
+/* line 406, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-close::before {
+  content: "\e64a";
+}
+
+/* line 410, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-close-circle::before {
+  content: "\e611";
+}
+
+/* line 414, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-collapse::before {
+  content: "\e626";
+}
+
+/* line 418, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-expand::before {
+  content: "\e625";
+}
+
+/* line 422, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-info::before {
+  content: "\e63d";
+}
+
+/* line 426, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-newpage::before {
+  content: "\e903";
+}
+
+/* line 430, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-plane::before {
+  content: "\e60d";
+}
+
+/* line 434, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-plane-depart::before {
+  content: "\e626";
+}
+
+/* line 438, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-star::before {
+  content: "\e629";
+}
+
+/* line 442, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-tick::before {
+  content: "\e608";
+}
+
+/* line 446, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-tick-circle::before {
+  content: "\e622";
+}
+
+/* line 450, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.icon.icon-warning::before {
+  content: "\e672";
+}
+
+/* line 455, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.small {
+  font-size: 0.889rem;
+}
+
+/* line 459, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+strong {
+  font-weight: 500;
+}
+
+/********** CHAT COMPONENTS **********/
+/* line 465, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-block {
+  margin-bottom: 20px;
+}
+
+/* line 468, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-block:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 474, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-block:last-child {
+  margin-bottom: 40px;
+}
+
+/* line 479, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 484, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble {
+  max-width: 90%;
+  width: auto;
+  background: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 20px 20px 0 20px;
+  position: relative;
+  float: left;
+  clear: both;
+  border: 1px solid #ebedec;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* line 497, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer {
+  border-top: 10px solid #767676;
+  margin: 20px 0 20px 0;
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+/* line 504, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer::before {
+  display: none;
+}
+
+/* line 508, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer:last-child::before {
+  display: none;
+}
+
+/* line 512, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer .image {
+  background: yellow;
+  height: 100%;
+}
+
+/* line 517, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer h1 {
+  margin-bottom: 20px;
+}
+
+/* line 521, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer .timestamp {
+  color: #4c4c4c;
+}
+
+/* line 525, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer ul {
+  font-size: 0.889rem;
+  padding-left: 30px;
+  list-style-type: disc;
+}
+
+/* line 530, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.disclaimer ul li {
+  margin-bottom: 10px;
+}
+
+/* line 536, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.key-response {
+  border: 2px solid #767676;
+}
+
+/* line 539, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.key-response::before {
+  content: ' ';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: #767676 !important;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-clip: padding-box;
+}
+
+/* line 550, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.typing {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+/* line 555, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user {
+  float: right;
+  word-wrap: break-word;
+}
+
+/* line 559, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user.autocorrect {
+  padding: 10px;
+  font-size: 0.889rem;
+  border-color: #C2262E;
+  border-width: 0px 5px 0px 0px;
+  border-style: solid;
+}
+
+/* line 566, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user.autocorrect:last-child::before {
+  display: none;
+}
+
+/* line 570, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user.autocorrect .timestamp {
+  display: none;
+}
+
+/* line 575, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user::before {
+  content: ' ';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0f748f;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-clip: padding-box;
+}
+
+@media (max-width: 719px) {
+  /* line 575, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.user::before {
+    right: -5px;
+  }
+}
+
+/* line 591, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.user:last-child .chat-bubble-tail {
+  width: 10px;
+  height: 10px;
+  background: #0f748f;
+  position: absolute;
+  bottom: -10px;
+  right: -8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+@media (max-width: 719px) {
+  /* line 591, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.user:last-child .chat-bubble-tail {
+    width: 8px;
+    height: 8px;
+    right: -10px;
+    bottom: -8px;
+  }
+}
+
+@media (max-width: 719px) {
+  /* line 555, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.user {
+    border-width: 0px 5px 0px 0px;
+  }
+}
+
+/* line 614, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera {
+  word-wrap: break-word;
+}
+
+/* line 617, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera::before {
+  content: ' ';
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #c6c2c1;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-clip: padding-box;
+}
+
+@media (max-width: 719px) {
+  /* line 617, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.vera::before {
+    left: -5px;
+  }
+}
+
+/* line 633, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera:last-child .chat-bubble-tail {
+  width: 10px;
+  height: 10px;
+  background: #c6c2c1;
+  position: absolute;
+  bottom: -10px;
+  left: -8px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+@media (max-width: 719px) {
+  /* line 633, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.vera:last-child .chat-bubble-tail {
+    width: 8px;
+    height: 8px;
+    left: -10px;
+    bottom: -8px;
+  }
+}
+
+/* line 651, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect {
+  padding: 10px;
+  font-size: 0.889rem;
+  border-color: #8CC63F;
+  border-width: 1px 1px 1px 5px;
+  border-style: solid;
+}
+
+/* line 659, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-correct p {
+  margin-bottom: 0;
+}
+
+/* line 663, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-correct .action-container {
+  display: none;
+}
+
+/* line 668, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-incorrect {
+  border-width: 0px 0px 0px 5px;
+  border-color: #c6c2c1;
+}
+
+/* line 673, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-incorrect .correct-label {
+  opacity: 0.4;
+}
+
+/* line 677, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-incorrect .incorect-label {
+  display: inline;
+}
+
+/* line 681, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect.status-incorrect .incorrect-trigger {
+  display: none !important;
+}
+
+/* line 686, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect .action-container {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* line 690, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect .action-container .incorrect-trigger {
+  border-left: 1px solid #c6c2c1;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 719px) {
+  /* line 690, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble.vera.autocorrect .action-container .incorrect-trigger {
+    display: block;
+    padding-left: 0px;
+    border-left: none;
+    margin-left: 0px;
+    text-align: left;
+  }
+}
+
+/* line 705, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect .icon-tick {
+  margin-right: 5px;
+  color: #367D79;
+  display: none;
+}
+
+/* line 711, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect .incorect-label {
+  display: none;
+}
+
+/* line 715, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect p {
+  margin-bottom: 0;
+}
+
+/* line 719, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble.vera.autocorrect .timestamp {
+  display: none;
+}
+
+/* line 725, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary {
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+/* line 729, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary .icon-plane {
+  margin: 0 0.5em 0 0.5em;
+  color: #8e8573;
+}
+
+/* line 734, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary p {
+  margin-bottom: 0;
+}
+
+/* line 738, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary ul {
+  font-size: 0.889rem;
+  padding-left: 10px;
+  position: relative;
+  list-style: none;
+}
+
+/* line 745, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary li {
+  position: relative;
+}
+
+/* line 749, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list li.chat-bubble .journey-summary li::before {
+  content: "•";
+  font-size: 75%;
+  color: #8e8573;
+  padding-right: 10px;
+}
+
+@media (max-width: 719px) {
+  /* line 484, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list li.chat-bubble {
+    max-width: 98%;
+    padding: 10px 10px 0 10px;
+    border-width: 0px 0px 0px 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+}
+
+/* line 765, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list .chat-wrapper {
+  background: yellow;
+}
+
+/* line 769, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+ul.chat-list .timestamp {
+  font-size: 0.5556rem;
+  text-align: right;
+  margin: 5px 0 5px 0;
+  color: #767676;
+}
+
+@media (max-width: 719px) {
+  /* line 769, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  ul.chat-list .timestamp {
+    margin: 0 0 5px 0;
+  }
+}
+
+/* line 781, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-status {
+  color: #d7d7d7;
+  text-align: right;
+  font-size: 0.667rem;
+  font-weight: 500;
+  right: 10px;
+  top: 0px;
+  position: relative;
+}
+
+/* line 792, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer-message-entry {
+  height: auto;
+  margin: 30px 0px 10px 20px;
+  border: 0;
+}
+
+@media (max-width: 719px) {
+  /* line 792, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-footer-message-entry {
+    margin: 20px 0px 10px 10px;
+    font-size: 1rem;
+  }
+}
+
+/* line 802, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer-message-entry textarea {
+  width: 100%;
+  font-size: 1.333rem;
+  max-height: 4.5rem;
+  outline: none;
+  border: 0;
+  resize: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  display: block;
+}
+
+/* line 813, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.chat-send {
+  display: inline;
+  height: 80px;
+  width: 80px;
+  margin: 10px 20px 0 0;
+  padding: 0;
+  color: #0f748f;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  float: right;
+  background: none;
+  border: 2px solid #0f748f;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+  -moz-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+@media (max-width: 719px) {
+  /* line 813, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .btn.chat-send {
+    margin: 5px 10px 0 0;
+    font-size: 1rem;
+    height: 60px;
+    width: 60px;
+    padding: 0;
+  }
+}
+
+/* line 841, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.chat-send:active {
+  box-shadow: none;
+}
+
+/* line 845, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.chat-send:focus, .btn.chat-send:hover {
+  outline: none;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  border: 4px solid #0f748f;
+}
+
+@media (max-width: 1023px) {
+  /* line 813, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .btn.chat-send {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* line 857, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .btn.chat-send:focus, .btn.chat-send:hover {
+    -webkit-box-shadow: 0 0px 0px transparent;
+    -moz-box-shadow: 0 0px 0px transparent;
+    box-shadow: 0 0px 0px transparent;
+    border: 2px solid #0f748f;
+  }
+}
+
+/********** CHAT STRUCTURE **********/
+/* line 866, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+}
+
+@media (max-width: 719px) {
+  /* line 866, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-footer {
+    font-size: 1rem;
+  }
+}
+
+/* line 879, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer .copyright {
+  height: 20px;
+  font-size: 0.556rem;
+  color: #767676;
+  text-align: center;
+  padding: 0px;
+  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-clip: padding-box;
+}
+
+@media (max-width: 719px) {
+  /* line 879, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-footer .copyright {
+    padding: 5px 10px 15px 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-clip: padding-box;
+  }
+}
+
+/* line 894, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer .chat-footer-container {
+  background: #FFFFFF;
+  position: relative;
+  z-index: 100;
+  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-clip: padding-box;
+}
+
+@media (max-width: 719px) {
+  /* line 894, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-footer .chat-footer-container {
+    min-height: 0;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-clip: padding-box;
+  }
+}
+
+/* line 912, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-footer-shadow {
+  height: 50px;
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  bottom: -50px;
+  z-index: 1;
+  -webkit-box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+/* line 923, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-window {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: -50px;
+  padding: 20px 20px 20px 20px;
+  overflow: scroll;
+  background: rgba(255, 255, 255, 0.1);
+  overflow-x: hidden;
+  -webkit-flex: 1 1 100px;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  outline: 0;
+}
+
+@media (max-width: 719px) {
+  /* line 923, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-window {
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+/* line 950, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-header-mobile {
+  display: none;
+}
+
+/* line 954, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.chat-header {
+  width: 100%;
+  height: 43px;
+  background: #c6c2c1;
+  -webkit-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
+  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-clip: padding-box;
+}
+
+@media (min-width: 1024px) {
+  /* line 954, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-header {
+    height: 90px;
+  }
+}
+
+@media (max-width: 719px) {
+  /* line 954, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-header {
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-clip: padding-box;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 969, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .chat-header-container {
+    height: 90px;
+    width: 100%;
+    padding: 0 30px 0 30px;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+  }
+}
+
+/* line 982, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.header_img_left {
+  width: 22px;
+  height: 27px;
+  margin: 7px auto 0 auto;
+  background: url("../img/icon/logo-cx-header-mobile@2x.png");
+  background-size: 22px 27px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  /* line 982, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .header_img_left {
+    width: 205px;
+    height: 30px;
+    margin-top: 26px;
+    background: url("../img/icon/logo-cx-header-web@2x.png");
+    background-size: 205px 30px;
+    background-repeat: no-repeat;
+    float: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 1002, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .header_img_right {
+    width: 37px;
+    height: 37px;
+    margin-top: 26px;
+    background: url("../img/icon/logo-oneworld-header-web@2x.png");
+    background-size: 37px 37px;
+    background-repeat: no-repeat;
+    float: right;
+  }
+}
+
+/* line 1014, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.alert_icon {
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+/********** BAGGAGE CALCULATOR RESPONSE **********/
+/* line 1025, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information {
+  margin-bottom: 10px;
+  font-size: 0.889rem;
+}
+
+/* line 1030, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information.accordion .panel {
+  border-bottom: 1px solid #c6c2c1;
+  padding: 10px;
+}
+
+/* line 1036, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .icon-expand, .additional-information .icon-collapse {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* line 1045, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel {
+  height: auto;
+  border: none;
+  border-top: 1px solid #c6c2c1;
+  padding-top: 10px;
+  margin: 0;
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/* line 1054, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel a {
+  padding: 0;
+}
+
+/* line 1058, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel .panel-body {
+  padding: 15px;
+  max-width: 465px;
+}
+
+/* line 1063, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel .panel-collapse {
+  margin-top: 20px;
+  max-width: 440px;
+}
+
+/* line 1068, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel .panel-heading {
+  position: relative;
+  padding: 0;
+}
+
+/* line 1072, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.additional-information .panel .panel-heading .icon {
+  right: 10px;
+  position: absolute;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* line 1082, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 {
+  max-width: 465px;
+  margin-bottom: 20px;
+}
+
+/* line 1086, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 .icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px auto;
+  top: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+@media (max-width: 719px) {
+  /* line 1086, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  table.baggage-calc-response-2 .icon {
+    margin-bottom: 5px;
+  }
+}
+
+/* line 1104, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 h2, table.baggage-calc-response-2 h3, table.baggage-calc-response-2 p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* line 1109, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 h2, table.baggage-calc-response-2 h3 {
+  margin: 0 0 10px 0;
+}
+
+/* line 1114, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 tbody.excess {
+  text-align: left;
+}
+
+/* line 1120, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 td.allowance-type, table.baggage-calc-response-2 th.allowance-type {
+  width: 35%;
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+}
+
+@media (max-width: 719px) {
+  /* line 1120, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  table.baggage-calc-response-2 td.allowance-type, table.baggage-calc-response-2 th.allowance-type {
+    width: 40%;
+    padding: 10px 10px 0 10px;
+  }
+}
+
+/* line 1131, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 td.allowance, table.baggage-calc-response-2 th.allowance {
+  width: 65%;
+  padding: 20px 20px 10px 20px;
+  background: #ebedec;
+}
+
+@media (max-width: 719px) {
+  /* line 1131, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  table.baggage-calc-response-2 td.allowance, table.baggage-calc-response-2 th.allowance {
+    width: 60%;
+    padding: 10px 10px 0 10px;
+  }
+}
+
+/* line 1141, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 td.allowance .label-primary, table.baggage-calc-response-2 th.allowance .label-primary {
+  background: none;
+  margin-bottom: 0.3em;
+}
+
+/* line 1146, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 td.allowance .label-secondary, table.baggage-calc-response-2 th.allowance .label-secondary {
+  font-size: 0.889rem;
+}
+
+/* line 1152, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 tr {
+  border: 1px solid #ebedec;
+}
+
+/* line 1155, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 tr.spacer {
+  height: 10px;
+  border: none;
+}
+
+/* line 1161, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+table.baggage-calc-response-2 .values td {
+  vertical-align: baseline;
+}
+
+/********** MODAL **********/
+/* line 1168, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal {
+  box-shadow: #FF0 0px 1px 0px 0px;
+}
+
+/* line 1172, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-body textarea {
+  max-height: 160px;
+  overflow: auto;
+}
+
+/* line 1179, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-close {
+  float: right;
+  font-size: 0.889rem;
+}
+
+/* line 1183, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-close .icon {
+  font-size: 1em;
+}
+
+/* line 1186, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-close .icon:hover {
+  text-decoration: none;
+}
+
+/* line 1192, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-footer {
+  border: none;
+}
+
+/* line 1196, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-header {
+  border: none;
+}
+
+/* line 1200, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal .modal-content {
+  -webkit-box-shadow: 0 5px 15px transparent;
+  -moz-box-shadow: 0 5px 15px transparent;
+  -o-box-shadow: 0 5px 15px transparent;
+  box-shadow: 0 5px 15px transparent;
+}
+
+/********** FEEDBACK **********/
+/* line 1211, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .feedback-step-2 {
+  display: none;
+  text-align: center;
+}
+
+/* line 1215, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .feedback-step-2 h3 {
+  margin-top: 0;
+}
+
+/* line 1219, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .feedback-step-2 .icon-tick {
+  color: #498169;
+  font-size: 3rem;
+}
+
+/* line 1225, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback h1, .modal.feedback h2, .modal.feedback h3 {
+  margin-bottom: 20px;
+}
+
+/* line 1229, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .modal-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 1234, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .star-rating {
+  margin-bottom: 20px;
+}
+
+/* line 1237, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback .star-rating img {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 1243, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.modal.feedback textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #c6c2c1;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+@media (max-width: 719px) {
+  /* line 1243, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .modal.feedback textarea {
+    font-size: 1rem;
+  }
+}
+
+/* line 1255, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.feedback-link-container {
+  text-align: right;
+}
+
+/* line 1258, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.feedback-link-container .feedback-link-floating {
+  background: #FFFFFF;
+  height: 30px;
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  display: inline-block;
+  font-size: 0.778rem;
+  padding: 4px 10px 4px 8px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* line 1271, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.feedback-link-container .feedback-link-floating:hover {
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 1276, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.feedback-link-container .feedback-link-floating p {
+  margin: 0;
+}
+
+/* line 1280, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.feedback-link-container .feedback-link-floating img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1023px) {
+  /* line 1258, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .feedback-link-container .feedback-link-floating {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  /* line 1289, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .feedback-link-container .feedback-link-floating:focus, .feedback-link-container .feedback-link-floating:hover {
+    -webkit-box-shadow: 0 0px 0px transparent;
+    -moz-box-shadow: 0 0px 0px transparent;
+    box-shadow: 0 0px 0px transparent;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 719px) {
+  /* line 1258, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .feedback-link-container .feedback-link-floating {
+    height: 24px;
+    padding: 2px 6px 0px 4px;
+    top: -30px;
+    right: 10px;
+  }
+  /* line 1301, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  .feedback-link-container .feedback-link-floating img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@-moz-keyframes dropHeader {
+  0% {
+    -moz-transform: translateY(80px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(80px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes dropHeader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/********** BUTTON **********/
+/* line 1339, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn {
+  cursor: pointer;
+  display: block;
+  min-height: 0px;
+  padding: .56875em 3em;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+/* line 1349, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.btn-primary {
+  box-shadow: #c6c2c1 0px 1px 0px 0px;
+  color: #FFFFFF;
+  background: transparent linear-gradient(to top, #0f748f 0px, #3391a2 100%) repeat scroll 0% 0%/auto padding-box border-box;
+  border: 1px solid transparent;
+  outline: white none 0px;
+}
+
+/* line 1356, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background: transparent linear-gradient(to top, #3291a2 0px, #0d6b7c 100%) repeat scroll 0% 0%/auto padding-box border-box;
+}
+
+/* line 1361, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.btn-secondary {
+  background: #FFFFFF;
+  border: 1px solid #c6c2c1;
+  color: #0f748f;
+}
+
+/* line 1366, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.btn-secondary:hover, .btn.btn-secondary:focus {
+  text-decoration: underline;
+}
+
+/* line 1370, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+.btn.btn-secondary:active {
+  box-shadow: none;
+}
+
+/********** WIDGET **********/
+/* line 1381, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.yes-no .btn-secondary {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* line 1387, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.yes-no.selected .feedback-buttons {
+  display: none;
+}
+
+@media (max-width: 719px) {
+  /* line 1393, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  li.chat-bubble.vera.widget.yes-no .btn-secondary {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* line 1400, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq {
+  min-width: 60%;
+}
+
+/* line 1403, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq.selected .widget-feedback {
+  display: none;
+}
+
+/* line 1408, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq.www .well-content {
+  padding-bottom: 10px !important;
+}
+
+/* line 1413, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .readmore-toggle {
+  display: none;
+}
+
+/* line 1421, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq [id^="rmjs"].well.expanded .readmore-toggle {
+  background: none;
+}
+
+/* line 1427, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq [id^="rmjs"].well .readmore-toggle {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  background: transparent linear-gradient(to top, #e8eaec 45%, rgba(232, 234, 236, 0.6));
+  position: absolute;
+  padding-top: 40px;
+  font-size: 0.889rem;
+  font-weight: 400;
+  bottom: 0px;
+  left: 0;
+  text-align: center;
+}
+
+/* line 1442, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well {
+  background-color: #E8EAEC;
+  font-size: 0.889rem;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0;
+  -webkit-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
+/* line 1453, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well h3 {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* line 1459, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-header {
+  background-color: #636E7B;
+  height: 40px;
+  width: 120%;
+  position: relative;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 0.778rem;
+  text-transform: uppercase;
+  -webkit-box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  background-clip: padding-box;
+}
+
+/* line 1471, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-header .well-header-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #202F42;
+  background-size: 32px 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -10px;
+  left: -10px;
+  position: relative;
+}
+
+/* line 1482, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-header .well-header-icon.icon-faq {
+  background-image: url("../img/icon/icon-info-faq-well-header@2x.png");
+}
+
+/* line 1486, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-header .well-header-icon.icon-www {
+  background-image: url("../img/icon/icon-www-faq-well-header@2x.png");
+}
+
+/* line 1491, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-header .well-header-content {
+  height: 40px;
+  position: relative;
+  top: -40px;
+  left: 40px;
+}
+
+/* line 1499, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .well .well-content {
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+/* line 1506, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+li.chat-bubble.vera.widget.faq .widget-feedback .btn-secondary {
+  font-size: 0.889rem;
+  padding: .3em 2em;
+  margin-left: 0;
+}
+
+@media (max-width: 719px) {
+  /* line 1506, /Users/Mikita/Desktop/fwd-assistant/public/css/custom.scss */
+  li.chat-bubble.vera.widget.faq .widget-feedback .btn-secondary {
+    margin: 0 auto 5px auto;
+  }
+}
+
+/*# sourceMappingURL=../../public-scout/custom.map */

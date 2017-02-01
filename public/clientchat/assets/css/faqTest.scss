@@ -1,0 +1,110 @@
+@import 'custom';
+
+.faqTest {
+  .answer-container {
+    padding: 20px;
+    background: $white;
+    border-top: 5px $cx-grey-warm solid;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: $font-md;
+    @include border-radius(5px);
+
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
+
+      &:hover {
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
+      }
+
+      &.bad-answer {
+        border: 2px solid $cx-red;
+        padding-top: 50px;
+
+        .feedback-label {
+          background: $cx-red;
+          display: initial;
+        }
+      }
+
+      &.selected-best-answer {
+        border: 2px solid $cx-blue-link;
+        padding-top: 50px;
+
+        .feedback-label {
+          background: $cx-blue-link;
+          display: initial;
+        }
+      }
+
+      .answer-link {
+        font-weight: 500;
+      }
+
+      .answer-type {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: $font-sm;
+      }
+
+      .btn-secondary {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+      }
+
+      .feedback-label {
+        padding: 5px 20px 10px 20px;
+        color: $white;
+        text-align: center;
+        font-weight: 400;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+  }
+
+  input {
+    width: 100%;
+    padding: 8px
+  }
+
+  .btn-secondary.no-helpful-answer {
+    margin-bottom: 80px;
+  }
+
+  .other-question {
+    margin-top: 10px;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    opacity: 0;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(medium) { 
+    .answer-container {
+      &:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+      }
+    }
+    .btn {
+      margin-top: 10px;
+
+      &.btn-primary {
+        width: 100%;
+      }
+    }
+  }
+}

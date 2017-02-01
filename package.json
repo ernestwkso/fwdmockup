@@ -1,0 +1,45 @@
+{
+  "name": "baggage-assistant",
+  "version": "1.2.0",
+  "description": "Baggage Assistant",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd modules && node createDb.js && node updateLuisModule.js",
+    "start": "node index.js",
+    "debug": "node index.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://edmondcx@bitbucket.org/innovationcentre/baggage-assistant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/innovationcentre/baggage-assistant#readme",
+  "dependencies": {
+    "@slack/client": "^3.5.1",
+    "body-parser": "^1.15.2",
+    "cron": "^1.1.1",
+    "csv": "^1.1.0",
+    "express": "^4.14.0",
+    "express-waf": "^0.1.6",
+    "iconv": "^2.2.1",
+    "jasmine": "^2.5.0",
+    "jasmine-console-reporter": "^1.2.7",
+    "jasmine-reporters": "^2.2.0",
+    "json2csv": "^3.7.0",
+    "moment": "^2.14.1",
+    "moment-timezone": "0.5.9",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.5.3",
+    "natural": "^0.4.0",
+    "node-slack-upload": "1.2.1",
+    "node-uuid": "^1.4.7",
+    "request": "^2.72.0",
+    "sequence": "^3.0.0",
+    "sleep": "^3.0.1",
+    "socket.io": "^1.4.8",
+    "underscore": "^1.8.3",
+    "wordnet-db": "^3.1.2",
+    "wordpos": "^1.1.0"
+  }
+}
